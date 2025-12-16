@@ -42,10 +42,10 @@ export const Navigation = () => {
   return (
     <nav className="sticky top-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
       <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between" style={{ height: 'var(--header-height)' }}>
           <Link 
             to="/" 
-            className="text-lg sm:text-xl font-semibold text-gray-900 dark:text-white"
+            className="font-title text-xl sm:text-2xl font-bold text-gray-900 dark:text-white tracking-tight"
             onClick={() => handleNavClick('overview')}
           >
             Kuldeep Lodhi
@@ -60,7 +60,7 @@ export const Navigation = () => {
                   key={item.path}
                   to={item.path}
                   onClick={() => handleNavClick(item.id)}
-                  className={`relative px-4 py-2 rounded-md text-sm font-medium transition-all duration-150 ease-in-out ${
+                  className={`relative px-4 py-2 rounded-md text-sm font-medium font-body transition-all duration-250 ease-out ${
                     isActive
                       ? 'text-gray-900 dark:text-white'
                       : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white'
@@ -83,7 +83,7 @@ export const Navigation = () => {
           <div className="flex items-center space-x-2">
             <button
               onClick={handleThemeToggle}
-              className="p-2 rounded-md text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-150 ease-in-out"
+              className="p-2 rounded-md text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-250 ease-out"
               aria-label="Toggle theme"
             >
               <motion.span
@@ -99,7 +99,7 @@ export const Navigation = () => {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="md:hidden p-2 rounded-md text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-150 ease-in-out"
+              className="md:hidden p-2 rounded-md text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-250 ease-out"
               aria-label="Toggle menu"
             >
               <MenuIcon isOpen={isMobileMenuOpen} />
@@ -125,7 +125,7 @@ export const Navigation = () => {
                       key={item.path}
                       to={item.path}
                       onClick={() => handleNavClick(item.id)}
-                      className={`block px-4 py-3 text-base font-medium rounded-md transition-all duration-150 ease-in-out ${
+                      className={`block px-4 py-3 text-base font-medium rounded-md transition-all duration-250 ease-out ${
                         isActive
                           ? 'bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white'
                           : 'text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800/50 hover:text-gray-900 dark:hover:text-white'

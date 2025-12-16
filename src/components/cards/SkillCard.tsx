@@ -38,12 +38,12 @@ export const SkillCard = ({ skill, index }: SkillCardProps) => {
         hover
         className={`h-full border-l-4 ${categoryColors[skill.category]}`}
       >
-        <div className="p-3 sm:p-4 flex items-center justify-between gap-2">
+        <div className="p-4 sm:p-5 flex items-center justify-between gap-3">
           <div className="flex-1 min-w-0">
-            <div className="text-sm sm:text-base font-medium text-gray-900 dark:text-white truncate">
+            <div className="font-body text-base sm:text-lg font-semibold text-gray-900 dark:text-white truncate">
               {skill.name}
             </div>
-            <div className="text-xs text-gray-500 dark:text-gray-500 mt-1 capitalize">
+            <div className="font-body text-xs text-gray-500 dark:text-gray-500 mt-1.5 capitalize">
               {skill.category}
             </div>
           </div>

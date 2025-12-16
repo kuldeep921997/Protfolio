@@ -32,22 +32,22 @@ export const ExperienceCard = ({ experience }: ExperienceCardProps) => {
 
   return (
     <Card variant="elevated" hover className="overflow-hidden">
-      <div className="p-4 sm:p-6">
-        <div className="flex items-start justify-between gap-3">
+      <div className="p-6 sm:p-8">
+        <div className="flex items-start justify-between gap-4">
           <div className="flex-1 min-w-0">
-            <h3 className="text-lg sm:text-xl font-semibold text-gray-900 dark:text-white">
+            <h3 className="font-title text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">
               {experience.role}
             </h3>
-            <div className="mt-1 text-base sm:text-lg font-medium text-gray-700 dark:text-gray-300">
+            <div className="mt-2 font-body text-lg sm:text-xl font-semibold text-gray-700 dark:text-gray-300">
               {experience.company}
             </div>
-            <div className="mt-1 text-xs sm:text-sm text-gray-500 dark:text-gray-400">
+            <div className="mt-2 font-body text-sm text-gray-500 dark:text-gray-400">
               {experience.period} {experience.location && `• ${experience.location}`}
             </div>
           </div>
           <motion.button
             onClick={toggleExpand}
-            className="flex-shrink-0 p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-150 ease-in-out"
+            className="flex-shrink-0 p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-250 ease-out"
             aria-label={isExpanded ? 'Collapse' : 'Expand'}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
@@ -68,7 +68,7 @@ export const ExperienceCard = ({ experience }: ExperienceCardProps) => {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: idx * 0.02, duration: 0.15 }}
-              className="px-2 py-1 text-xs font-medium bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded transition-all duration-150 hover:scale-105"
+              className="px-2 py-1 text-xs font-medium bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded transition-all duration-250 ease-out hover:scale-105"
             >
               {tag}
             </motion.span>
@@ -89,15 +89,15 @@ export const ExperienceCard = ({ experience }: ExperienceCardProps) => {
               }}
               className="overflow-hidden"
             >
-              <div className="mt-4 sm:mt-6 space-y-4 sm:space-y-6">
+              <div className="mt-6 sm:mt-8 space-y-6 sm:space-y-8">
                 <div>
-                  <h4 className="text-sm font-semibold text-gray-900 dark:text-white mb-2 sm:mb-3">
+                  <h4 className="font-title text-base sm:text-lg font-semibold text-gray-900 dark:text-white mb-3 sm:mb-4">
                     Key Highlights
                   </h4>
-                  <ul className="space-y-1.5 sm:space-y-2">
+                  <ul className="space-y-2 sm:space-y-3">
                     {experience.highlights.map((highlight, idx) => (
-                      <li key={idx} className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 flex items-start leading-relaxed">
-                        <span className="mr-2 text-gray-400 dark:text-gray-500 flex-shrink-0">•</span>
+                      <li key={idx} className="font-body text-sm sm:text-base text-gray-600 dark:text-gray-400 flex items-start leading-relaxed">
+                        <span className="mr-3 text-gray-400 dark:text-gray-500 flex-shrink-0">•</span>
                         <span>{highlight}</span>
                       </li>
                     ))}
@@ -105,7 +105,7 @@ export const ExperienceCard = ({ experience }: ExperienceCardProps) => {
                 </div>
 
                 <div>
-                  <h4 className="text-sm font-semibold text-gray-900 dark:text-white mb-2 sm:mb-3">
+                  <h4 className="font-title text-base sm:text-lg font-semibold text-gray-900 dark:text-white mb-3 sm:mb-4">
                     Key Achievements
                   </h4>
                   <div className="space-y-3 sm:space-y-4">
@@ -128,10 +128,10 @@ export const ExperienceCard = ({ experience }: ExperienceCardProps) => {
                             </span>
                           )}
                         </div>
-                        <h5 className="font-semibold text-gray-900 dark:text-white text-xs sm:text-sm mb-1">
+                        <h5 className="font-body font-semibold text-gray-900 dark:text-white text-sm sm:text-base mb-2">
                           {achievement.title}
                         </h5>
-                        <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                        <p className="font-body text-sm sm:text-base text-gray-600 dark:text-gray-400 leading-relaxed">
                           {achievement.description}
                         </p>
                       </div>

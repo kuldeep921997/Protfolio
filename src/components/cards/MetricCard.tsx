@@ -19,16 +19,16 @@ export const MetricCard = ({ metric, index }: MetricCardProps) => {
         delay: index * 0.03 
       }}
     >
-      <Card variant="elevated" hover className="p-4 sm:p-6 h-full">
-        <div className="space-y-2">
-          <div className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white">
+      <Card variant="elevated" hover className="p-6 sm:p-8 h-full">
+        <div className="space-y-3">
+          <div className="font-title text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white leading-none">
             {metric.value}
           </div>
-          <div className="text-xs sm:text-sm font-medium text-gray-600 dark:text-gray-400">
+          <div className="font-body text-sm sm:text-base font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wide">
             {metric.label}
           </div>
           {metric.description && (
-            <div className="text-xs text-gray-500 dark:text-gray-500 mt-2 leading-relaxed">
+            <div className="font-body text-sm text-gray-600 dark:text-gray-400 mt-3 leading-relaxed">
               {metric.description}
             </div>
           )}

@@ -20,11 +20,11 @@ export const PhilosophyCard = ({ philosophy, index }: PhilosophyCardProps) => {
       }}
     >
       <Card variant="outlined" hover className="h-full">
-        <div className="p-4 sm:p-6 space-y-2 sm:space-y-3">
-          <h3 className="text-base sm:text-lg font-semibold text-gray-900 dark:text-white">
+        <div className="p-6 sm:p-8 space-y-3 sm:space-y-4">
+          <h3 className="font-title text-lg sm:text-xl font-bold text-gray-900 dark:text-white leading-tight">
             {philosophy.principle}
           </h3>
-          <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+          <p className="font-body text-sm sm:text-base text-gray-600 dark:text-gray-400 leading-relaxed">
             {philosophy.explanation}
           </p>
         </div>

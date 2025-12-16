@@ -16,7 +16,7 @@ export const Card = ({
   hover = false,
   onClick 
 }: CardProps) => {
-  const baseStyles = 'rounded-lg transition-all duration-150 ease-in-out';
+  const baseStyles = 'rounded-lg transition-all duration-250 ease-out';
   
   const variantStyles = {
     default: 'bg-white dark:bg-gray-800 shadow-sm',

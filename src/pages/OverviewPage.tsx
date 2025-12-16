@@ -9,15 +9,15 @@ export const OverviewPage = () => {
   return (
     <Container className="py-6 sm:py-8 md:py-12">
       <motion.div 
-        className="mb-8 sm:mb-10 md:mb-12"
+        className="mb-12 sm:mb-16 md:mb-20"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.25, ease: 'easeOut' }}
       >
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-3 sm:mb-4">
+        <h1 className="font-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6 sm:mb-8 leading-tight">
           Senior Frontend / Full Stack Engineer
         </h1>
-        <p className="text-base sm:text-lg text-gray-600 dark:text-gray-400 max-w-3xl leading-relaxed">
+        <p className="font-body text-lg sm:text-xl md:text-2xl text-gray-600 dark:text-gray-400 max-w-4xl leading-relaxed">
           Senior Full Stack Engineer with 7+ years of experience architecting enterprise platforms 
           serving 6000+ users across 1000+ locations. Expert in React/TypeScript ecosystems, Redux 
           state management, and scalable frontend architecture. Technical leader with proven ability 

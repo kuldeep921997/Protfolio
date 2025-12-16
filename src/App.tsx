@@ -19,7 +19,7 @@ function App() {
     <Provider store={store}>
       <BrowserRouter basename={basename}>
         <ScrollToTop />
-        <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-150 ease-in-out">
+        <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-250 ease-out">
           <Navigation />
           <main>
             <AppRoutes />
