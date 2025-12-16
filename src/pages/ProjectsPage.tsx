@@ -1,10 +1,16 @@
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Container } from '../components/layout/Container';
 import { ProjectCard } from '../components/cards/ProjectCard';
 import { useAppSelector } from '../app/hooks';
+import { useState } from 'react';
 
 export const ProjectsPage = () => {
   const projects = useAppSelector((state) => state.projects.projects);
+  const [expandedId, setExpandedId] = useState<string | null>(null);
+
+  const handleProjectClick = (projectId: string) => {
+    setExpandedId(expandedId === projectId ? null : projectId);
+  };
 
   return (
     <Container className="py-6 sm:py-8 md:py-12">
@@ -23,10 +29,22 @@ export const ProjectsPage = () => {
         </p>
       </motion.div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
-        {projects.map((project, index) => (
-          <ProjectCard key={project.id} project={project} index={index} />
-        ))}
+      <div className="space-y-4 sm:space-y-6">
+        <AnimatePresence mode="wait">
+          {projects.map((project, index) => {
+            const isExpanded = expandedId === project.id;
+            
+            return (
+              <ProjectCard
+                key={project.id}
+                project={project}
+                index={index}
+                isExpanded={isExpanded}
+                onClick={() => handleProjectClick(project.id)}
+              />
+            );
+          })}
+        </AnimatePresence>
       </div>
     </Container>
   );
