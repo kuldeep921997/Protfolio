@@ -31,14 +31,13 @@ export const ProjectsPage = () => {
 
       <div className="space-y-4 sm:space-y-6">
         <AnimatePresence mode="wait">
-          {projects.map((project, index) => {
+          {projects.map((project) => {
             const isExpanded = expandedId === project.id;
             
             return (
               <ProjectCard
                 key={project.id}
                 project={project}
-                index={index}
                 isExpanded={isExpanded}
                 onClick={() => handleProjectClick(project.id)}
               />

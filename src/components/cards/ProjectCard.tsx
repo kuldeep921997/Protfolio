@@ -4,12 +4,11 @@ import { Project } from '../../types';
 
 interface ProjectCardProps {
   project: Project;
-  index: number;
   isExpanded: boolean;
   onClick: () => void;
 }
 
-export const ProjectCard = ({ project, index, isExpanded, onClick }: ProjectCardProps) => {
+export const ProjectCard = ({ project, isExpanded, onClick }: ProjectCardProps) => {
   return (
     <motion.div
       layout
