@@ -1,0 +1,316 @@
+{
+  "skills": [
+    {
+      "id": "js",
+      "name": "JavaScript (ES6+)",
+      "category": "frontend",
+      "proficiency": "expert"
+    },
+    {
+      "id": "ts",
+      "name": "TypeScript",
+      "category": "frontend",
+      "proficiency": "expert"
+    },
+    {
+      "id": "react",
+      "name": "React.js",
+      "category": "frontend",
+      "proficiency": "expert"
+    },
+    {
+      "id": "redux",
+      "name": "Redux Toolkit",
+      "category": "frontend",
+      "proficiency": "expert"
+    },
+    {
+      "id": "nextjs",
+      "name": "Next.js",
+      "category": "frontend",
+      "proficiency": "advanced"
+    },
+    {
+      "id": "svelte",
+      "name": "Svelte.js",
+      "category": "frontend",
+      "proficiency": "advanced"
+    },
+    {
+      "id": "html",
+      "name": "HTML5",
+      "category": "frontend",
+      "proficiency": "expert"
+    },
+    {
+      "id": "css",
+      "name": "CSS3",
+      "category": "frontend",
+      "proficiency": "expert"
+    },
+    {
+      "id": "tailwind",
+      "name": "Tailwind CSS",
+      "category": "frontend",
+      "proficiency": "expert"
+    },
+    {
+      "id": "mui",
+      "name": "Material-UI",
+      "category": "frontend",
+      "proficiency": "advanced"
+    },
+    {
+      "id": "bootstrap",
+      "name": "Bootstrap",
+      "category": "frontend",
+      "proficiency": "proficient"
+    },
+    {
+      "id": "node",
+      "name": "Node.js",
+      "category": "backend",
+      "proficiency": "advanced"
+    },
+    {
+      "id": "express",
+      "name": "Express.js",
+      "category": "backend",
+      "proficiency": "advanced"
+    },
+    {
+      "id": "django",
+      "name": "Django",
+      "category": "backend",
+      "proficiency": "proficient"
+    },
+    {
+      "id": "python",
+      "name": "Python",
+      "category": "backend",
+      "proficiency": "advanced"
+    },
+    {
+      "id": "rest",
+      "name": "REST APIs",
+      "category": "backend",
+      "proficiency": "expert"
+    },
+    {
+      "id": "mysql",
+      "name": "MySQL",
+      "category": "backend",
+      "proficiency": "advanced"
+    },
+    {
+      "id": "mongodb",
+      "name": "MongoDB",
+      "category": "backend",
+      "proficiency": "advanced"
+    },
+    {
+      "id": "postgres",
+      "name": "PostgreSQL",
+      "category": "backend",
+      "proficiency": "proficient"
+    },
+    {
+      "id": "redis",
+      "name": "Redis",
+      "category": "backend",
+      "proficiency": "advanced"
+    },
+    {
+      "id": "aws",
+      "name": "AWS",
+      "category": "devops",
+      "proficiency": "advanced"
+    },
+    {
+      "id": "azure",
+      "name": "Azure DevOps",
+      "category": "devops",
+      "proficiency": "advanced"
+    },
+    {
+      "id": "docker",
+      "name": "Docker",
+      "category": "devops",
+      "proficiency": "advanced"
+    },
+    {
+      "id": "cicd",
+      "name": "CI/CD Pipelines",
+      "category": "devops",
+      "proficiency": "advanced"
+    },
+    {
+      "id": "git",
+      "name": "Git",
+      "category": "devops",
+      "proficiency": "expert"
+    },
+    {
+      "id": "microservices",
+      "name": "Microservices Architecture",
+      "category": "architecture",
+      "proficiency": "advanced"
+    },
+    {
+      "id": "scalable",
+      "name": "Scalable Systems Design",
+      "category": "architecture",
+      "proficiency": "expert"
+    },
+    {
+      "id": "performance",
+      "name": "Performance Optimization",
+      "category": "architecture",
+      "proficiency": "expert"
+    },
+    {
+      "id": "component",
+      "name": "Component Architecture",
+      "category": "architecture",
+      "proficiency": "expert"
+    },
+    {
+      "id": "state",
+      "name": "State Management Patterns",
+      "category": "architecture",
+      "proficiency": "expert"
+    },
+    {
+      "id": "code-split",
+      "name": "Code Splitting & Lazy Loading",
+      "category": "architecture",
+      "proficiency": "expert"
+    },
+    {
+      "id": "mentoring",
+      "name": "Team Mentoring",
+      "category": "leadership",
+      "proficiency": "advanced"
+    },
+    {
+      "id": "code-review",
+      "name": "Code Reviews",
+      "category": "leadership",
+      "proficiency": "expert"
+    },
+    {
+      "id": "agile",
+      "name": "Agile/Scrum",
+      "category": "leadership",
+      "proficiency": "advanced"
+    },
+    {
+      "id": "stakeholder",
+      "name": "Stakeholder Management",
+      "category": "leadership",
+      "proficiency": "advanced"
+    }
+  ],
+  "strengths": [
+    {
+      "id": "state-management",
+      "category": "Frontend Architecture",
+      "title": "State Management Patterns",
+      "description": "Expert in Redux Toolkit with proven patterns for scalable state management. Built 30-40 reusable components reducing code duplication by 20-40% across dual repositories. Established frontend conventions for component architecture and scalable Redux patterns.",
+      "examples": [
+        "Redux Toolkit for complex state management",
+        "Component-level state for UI-only concerns",
+        "Normalized state structures for performance",
+        "Middleware patterns for async operations"
+      ]
+    },
+    {
+      "id": "performance",
+      "category": "Performance Optimization",
+      "title": "Performance Optimization Techniques",
+      "description": "Proven track record of performance improvements: 45% reduction in load times, 55% reduction in page load time, sub-100ms response times. Expert in memoization, virtualization, code-splitting, and bundle optimization.",
+      "examples": [
+        "React.memo and useMemo for expensive computations",
+        "Virtual scrolling for large lists",
+        "Lazy loading and code-splitting with React Router",
+        "Bundle optimization and tree-shaking"
+      ]
+    },
+    {
+      "id": "component-arch",
+      "category": "Frontend Architecture",
+      "title": "Component Architecture Strategy",
+      "description": "Designed scalable component libraries with TypeScript, establishing patterns for reusability, maintainability, and consistency. Built component systems supporting 1000+ locations with role-based access control.",
+      "examples": [
+        "Atomic design principles",
+        "Compound component patterns",
+        "Render props and HOC patterns",
+        "TypeScript-first component design"
+      ]
+    },
+    {
+      "id": "api-integration",
+      "category": "Backend Integration",
+      "title": "API Integration at Scale",
+      "description": "Collaborated with 25-30 microservices backend architecture. Achieved 99.68% API success rate processing 1.28M+ daily transactions. Implemented graceful error handling and seamless integration across distributed systems.",
+      "examples": [
+        "RESTful API design and consumption",
+        "Error boundary patterns",
+        "Retry and circuit breaker patterns",
+        "Real-time data synchronization"
+      ]
+    },
+    {
+      "id": "error-handling",
+      "category": "System Resilience",
+      "title": "Error Handling & Resilience",
+      "description": "Implemented comprehensive error handling strategies ensuring 99.5%+ platform uptime. Graceful degradation patterns for distributed systems with 25-30 microservices integration.",
+      "examples": [
+        "Error boundary implementation",
+        "Graceful degradation strategies",
+        "Retry mechanisms with exponential backoff",
+        "Comprehensive logging and monitoring"
+      ]
+    },
+    {
+      "id": "devops",
+      "category": "DevOps & Deployment",
+      "title": "DevOps & CI/CD Excellence",
+      "description": "Configured Docker containerization, CI/CD pipelines, and deployment workflows enabling 2+ production releases daily. Streamlined deployment processes reducing time-to-production significantly.",
+      "examples": [
+        "Docker containerization",
+        "Azure DevOps CI/CD pipelines",
+        "AWS infrastructure deployment",
+        "Automated testing and deployment"
+      ]
+    }
+  ],
+  "philosophy": [
+    {
+      "id": "tradeoffs",
+      "principle": "Tradeoffs over trends",
+      "explanation": "Every technology decision is a tradeoff. Choose solutions based on team context, scale requirements, and long-term maintainability, not just what's trending."
+    },
+    {
+      "id": "performance",
+      "principle": "Performance before polish",
+      "explanation": "A beautiful interface that's slow is a failed product. Optimize for real-world performance metrics that impact user experience and business outcomes."
+    },
+    {
+      "id": "scalability",
+      "principle": "Scalability before shortcuts",
+      "explanation": "Build systems that can grow. Short-term shortcuts become long-term technical debt. Design for scale from day one, even if current requirements are modest."
+    },
+    {
+      "id": "maintainability",
+      "principle": "Maintainability over cleverness",
+      "explanation": "Code is read more than it's written. Write code that your future self and teammates can understand and modify. Clarity beats cleverness every time."
+    },
+    {
+      "id": "architecture",
+      "principle": "Architecture enables velocity",
+      "explanation": "Good architecture isn't about perfection—it's about enabling team velocity. The right abstractions let teams move fast without breaking things."
+    }
+  ]
+}
+

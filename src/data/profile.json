@@ -1,0 +1,40 @@
+{
+  "metrics": [
+    {
+      "id": "experience",
+      "label": "Years of Experience",
+      "value": "7+",
+      "description": "Building enterprise-scale applications"
+    },
+    {
+      "id": "users",
+      "label": "Users Impacted",
+      "value": "6000+",
+      "description": "Daily active users across platforms"
+    },
+    {
+      "id": "systems",
+      "label": "Systems Built",
+      "value": "50+",
+      "description": "Production applications in active use"
+    },
+    {
+      "id": "performance",
+      "label": "Performance Improvements",
+      "value": "45%",
+      "description": "Average reduction in load times"
+    },
+    {
+      "id": "scale",
+      "label": "Locations Served",
+      "value": "1000+",
+      "description": "Retail stores and distribution centers"
+    },
+    {
+      "id": "transactions",
+      "label": "Daily Transactions",
+      "value": "1.28M+",
+      "description": "Processed across enterprise platforms"
+    }
+  ]
+}

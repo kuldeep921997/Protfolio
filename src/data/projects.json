@@ -1,0 +1,169 @@
+{
+  "projects": [
+    {
+      "id": "anytrac-rfid",
+      "title": "AnyTrac RFID Platform",
+      "description": "Unified RFID tag management system for Reliance Retail's Fashion & Lifestyle ecosystem, transforming inventory operations across the entire supply chain",
+      "problem": "Manual inventory counting was time-consuming (5 minutes for 50-item carton) and error-prone, leading to inventory inaccuracies (75% accuracy) and high theft rates. Needed a scalable solution for 1000+ locations with real-time tracking capabilities.",
+      "architecture": "Built scalable frontend architecture for multi-vendor RFID integration supporting Store Portal, Cluster Portal, DC Shell Application, Self-Checkout systems, and Trial Room Analysis. Implemented advanced routing with React Router featuring lazy loading and code-splitting strategies. Designed modular workflow system with role-based access control.",
+      "techStack": ["React.js", "TypeScript", "Redux Toolkit", "Node.js", "MySQL", "MongoDB", "Redis", "Azure DevOps"],
+      "outcomes": [
+        {
+          "metric": "Inventory Accuracy",
+          "value": "75% → 98%",
+          "description": "Improved through real-time RFID tracking and automated reconciliation"
+        },
+        {
+          "metric": "Theft Reduction",
+          "value": "40%",
+          "description": "Reduced through automated tracking and reconciliation"
+        },
+        {
+          "metric": "Scanning Speed",
+          "value": "5 min → 1 sec",
+          "description": "Enabled scanning 50-item carton in 1 second versus 5 minutes manually"
+        },
+        {
+          "metric": "Page Load Time",
+          "value": "55% reduction",
+          "description": "Reduced initial page load time through lazy loading and code-splitting"
+        },
+        {
+          "metric": "Rollout Acceleration",
+          "value": "30% faster",
+          "description": "Accelerated nationwide rollout through intuitive UI design"
+        },
+        {
+          "metric": "Onboarding Time",
+          "value": "2 weeks → 3 days",
+          "description": "Reduced onboarding time for non-technical staff"
+        }
+      ],
+      "scale": {
+        "users": "6000+ daily active users",
+        "transactions": "1.28M+ daily transactions",
+        "stores": "1000+ locations nationwide",
+        "data": "99.68% API success rate"
+      }
+    },
+    {
+      "id": "scholarship-portal",
+      "title": "Reliance Foundation Scholarship Portal",
+      "description": "Comprehensive student enrollment and interview management system handling over 50,000 scholarship applications annually with streamlined workflows, automated processing, and role-based access control",
+      "problem": "Legacy K2 Technology system lacked scalability, had high maintenance costs, and slow deployment cycles. Manual document processing was time-consuming with high error rates. Needed to support 50,000+ annual applications with multiple user personas and concurrent interview sessions.",
+      "architecture": "Migrated from legacy K2 Technology to modern MERN stack architecture. Built complete registration workflow with OCR integration for automated document processing. Created Interview Portal from scratch supporting over 50 concurrent interview sessions with real-time scoring, panel coordination, and automated candidate communication.",
+      "techStack": ["React.js", "Node.js", "Express.js", "MongoDB", "OCR", "Azure DevOps"],
+      "outcomes": [
+        {
+          "metric": "Manual Data Entry Time",
+          "value": "70% reduction",
+          "description": "Reduced through OCR integration for automated document processing"
+        },
+        {
+          "metric": "Data Entry Errors",
+          "value": "85% elimination",
+          "description": "Eliminated across all application touchpoints"
+        },
+        {
+          "metric": "System Scalability",
+          "value": "200% improvement",
+          "description": "Improved through MERN stack migration"
+        },
+        {
+          "metric": "Maintenance Costs",
+          "value": "50% reduction",
+          "description": "Reduced through modern architecture"
+        },
+        {
+          "metric": "Deployment Cycles",
+          "value": "60% faster",
+          "description": "Enabled rapid feature development"
+        },
+        {
+          "metric": "Concurrent Interviews",
+          "value": "50+ sessions",
+          "description": "Supported with real-time scoring and panel coordination"
+        }
+      ],
+      "scale": {
+        "users": "50,000+ annual applications",
+        "transactions": "50+ concurrent interview sessions",
+        "stores": "5 distinct user personas",
+        "data": "Real-time scoring and analytics"
+      }
+    },
+    {
+      "id": "trading-simulator",
+      "title": "Trading Simulator Platform",
+      "description": "Complete trading simulation platform built from scratch, enabling users to practice trading strategies with real-time market data and ML-based portfolio recommendations",
+      "problem": "No existing platform for traders to practice and learn without financial risk. Needed a scalable solution with real-time market data, sub-100ms response times, and intelligent portfolio recommendations to drive user engagement.",
+      "architecture": "Architected and developed complete frontend from scratch using Svelte.js. Implemented ML-based portfolio recommendation system. Designed for high performance with sub-100ms response times. Built scalable architecture supporting 300-500 daily active users with 40-60% retention rate.",
+      "techStack": ["Svelte.js", "ML", "Full Stack", "Real-time Data"],
+      "outcomes": [
+        {
+          "metric": "User Engagement",
+          "value": "25% increase",
+          "description": "Driven by ML-based portfolio recommendation system"
+        },
+        {
+          "metric": "Response Time",
+          "value": "<100ms",
+          "description": "Sub-100ms response times for trade processing"
+        },
+        {
+          "metric": "Platform Uptime",
+          "value": "99.5%",
+          "description": "Maintained throughout rapid growth phase"
+        },
+        {
+          "metric": "Daily Trades",
+          "value": "8K+",
+          "description": "Processing 8K+ simulated trades daily"
+        },
+        {
+          "metric": "User Retention",
+          "value": "40-60%",
+          "description": "Retention rate across user base"
+        }
+      ],
+      "scale": {
+        "users": "300-500 daily active users",
+        "transactions": "8K+ simulated trades daily",
+        "stores": "ML-based recommendations",
+        "data": "Real-time market data processing"
+      }
+    },
+    {
+      "id": "reliance-jewels",
+      "title": "Reliance Jewels Integration",
+      "description": "Technical architecture planning and frontend implementation for jewelry retail platform with specialized workflows for inventory management, certification, and quality assurance",
+      "problem": "Jewelry retail requires specialized inventory management with unique serial number tracking, stone tracking, and metal purity verification. Needed frontend architecture patterns adapted to jewelry-specific workflows with seamless backend integration.",
+      "architecture": "Contributed to technical architecture planning through strategic design workshops and whiteboarding sessions. Designed frontend architecture patterns for unique serial number management, stone tracking, and metal purity verification. Implemented frontend components for certification document management and quality assurance processes.",
+      "techStack": ["React.js", "TypeScript", "Node.js", "Azure DevOps"],
+      "outcomes": [
+        {
+          "metric": "Architecture Planning",
+          "value": "Complete",
+          "description": "Participated in strategic design workshops and whiteboarding sessions"
+        },
+        {
+          "metric": "Specialized Workflows",
+          "value": "Implemented",
+          "description": "Designed patterns for serial number, stone tracking, and purity verification"
+        },
+        {
+          "metric": "Integration",
+          "value": "Seamless",
+          "description": "Ensured seamless integration with existing backend inventory systems"
+        }
+      ],
+      "scale": {
+        "users": "Jewelry retail operations",
+        "transactions": "Inventory management workflows",
+        "stores": "Certification and QA processes",
+        "data": "Serial number and stone tracking"
+      }
+    }
+  ]
+}
+

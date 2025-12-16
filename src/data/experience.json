@@ -1,0 +1,115 @@
+{
+  "experiences": [
+    {
+      "id": "reliance-jio-1",
+      "company": "Reliance Jio Platforms",
+      "role": "Software Development Engineer - 2 (Frontend)",
+      "period": "Dec 2023 - Present",
+      "location": "Navi Mumbai, India",
+      "highlights": [
+        "Spearheaded frontend development for enterprise-scale inventory management platform",
+        "Designed and delivered multi-portal system with role-based authentication",
+        "Built 30-40 reusable TypeScript components reducing code duplication by 20-40%",
+        "Led 3-member frontend team conducting 30+ code reviews per sprint",
+        "Configured Docker containerization and CI/CD pipelines enabling 2+ daily production releases"
+      ],
+      "achievements": [
+        {
+          "type": "scale",
+          "title": "Platform Scale",
+          "description": "Serving 1297+ retail stores across 6 major brands (Azorte, GAP, Yousta, Superdry, Swadesh, Trends) and 1743+ distribution centers, managing inventory worth INR 50+ Crores",
+          "metrics": "1297+ stores, 1743+ DCs, INR 50+ Cr inventory"
+        },
+        {
+          "type": "scale",
+          "title": "User & Transaction Scale",
+          "description": "Supporting 6000+ daily active users, processing 1.28M+ daily transactions with 99.68% API success rate",
+          "metrics": "6000+ DAU, 1.28M+ daily transactions, 99.68% API success"
+        },
+        {
+          "type": "performance",
+          "title": "Performance Optimization",
+          "description": "Improved Cluster Dashboard performance by 45% (10ms to 6.5ms load time) using memoization and virtualization techniques, enabling real-time data management for cluster managers overseeing 100+ stores",
+          "metrics": "45% improvement, 6.5ms load time"
+        },
+        {
+          "type": "leadership",
+          "title": "Technical Leadership",
+          "description": "Led 3-member frontend team, conducting 30+ code reviews per sprint, mentoring junior engineers through pair programming, driving Agile delivery in 2-week sprints with 20+ cross-functional stakeholders",
+          "metrics": "3 engineers, 30+ reviews/sprint"
+        },
+        {
+          "type": "devops",
+          "title": "DevOps & Deployment",
+          "description": "Configured Docker containerization, CI/CD pipeline settings, and deployment workflows using Azure DevOps, enabling 2+ production releases daily to AWS infrastructure",
+          "metrics": "2+ daily releases, Azure DevOps, AWS"
+        }
+      ],
+      "tags": ["React", "TypeScript", "Redux Toolkit", "Docker", "Azure DevOps", "AWS", "Microservices", "Node.js", "MySQL", "MongoDB", "Redis", "Kafka"]
+    },
+    {
+      "id": "algonauts-1",
+      "company": "Algonauts Advisory",
+      "role": "Senior Software Developer",
+      "period": "Nov 2021 - Dec 2023",
+      "location": "Mumbai, India",
+      "highlights": [
+        "Architected and developed complete frontend for Trading Simulator platform from scratch using Svelte.js",
+        "Partnered directly with company CEOs as core technical team member, influencing critical product decisions",
+        "Proposed and implemented ML-based portfolio recommendation system driving 25% increase in user engagement",
+        "Led full-stack development with sole frontend ownership, scaling team to 3 engineers",
+        "Maintained 99.5% platform uptime throughout rapid growth phase"
+      ],
+      "achievements": [
+        {
+          "type": "scale",
+          "title": "Platform Scale",
+          "description": "Serving 300-500 daily active users with 40-60% retention rate, processing 8K+ simulated trades daily with sub-100ms response times",
+          "metrics": "300-500 DAU, 40-60% retention, 8K+ trades/day"
+        },
+        {
+          "type": "performance",
+          "title": "Performance Excellence",
+          "description": "Achieved sub-100ms response times for trade processing, maintaining 99.5% platform uptime",
+          "metrics": "<100ms response time, 99.5% uptime"
+        },
+        {
+          "type": "leadership",
+          "title": "Product Leadership",
+          "description": "Influenced critical product decisions on customer journey design, UX optimization, risk calculation scenarios, and portfolio distribution logic through direct CEO partnership",
+          "metrics": "25% engagement increase"
+        }
+      ],
+      "tags": ["Svelte.js", "ML", "Full Stack", "Product Strategy", "Performance"]
+    },
+    {
+      "id": "ugam-1",
+      "company": "Ugam Solutions",
+      "role": "Senior Analyst",
+      "period": "June 2019 - Nov 2021",
+      "location": "Thane, Maharashtra, India",
+      "highlights": [
+        "Delivered high-profile client projects for CDC, University of Chicago, Google Screenwise, and IPSOS using Qualtrics platform",
+        "Developed and maintained JavaScript/jQuery libraries, implemented complex API integrations",
+        "Created interactive data visualization dashboards for enterprise clients",
+        "Consistently met tight deadlines and exceeded client expectations across 15+ enterprise engagements"
+      ],
+      "achievements": [
+        {
+          "type": "performance",
+          "title": "Performance Optimization",
+          "description": "Improved data accessibility and reduced report generation time by 40% through optimized data visualization dashboards",
+          "metrics": "40% reduction in report generation time"
+        },
+        {
+          "type": "scale",
+          "title": "Enterprise Client Delivery",
+          "description": "Successfully delivered 15+ enterprise engagements for major organizations including CDC, University of Chicago, Google Screenwise, and IPSOS",
+          "metrics": "15+ enterprise projects"
+        }
+      ],
+      "tags": ["Qualtrics", "JavaScript", "jQuery", "API Integration", "Data Visualization"]
+    }
+  ]
+}
+
