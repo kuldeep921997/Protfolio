@@ -17,7 +17,6 @@ export const ProjectCard = ({ project, index, isExpanded, onClick }: ProjectCard
       animate={{ 
         opacity: 1, 
         y: 0,
-        scale: isExpanded ? 1 : 1,
       }}
       exit={{ opacity: 0, y: -20 }}
       transition={{ 
@@ -36,7 +35,6 @@ export const ProjectCard = ({ project, index, isExpanded, onClick }: ProjectCard
             ? 'shadow-2xl' 
             : 'hover:shadow-lg'
         }`}
-        onClick={!isExpanded ? onClick : undefined}
       >
         {/* Green strip when closed - opens card */}
         {!isExpanded && (
@@ -49,7 +47,11 @@ export const ProjectCard = ({ project, index, isExpanded, onClick }: ProjectCard
               e.stopPropagation();
               onClick();
             }}
-            className="absolute top-0 right-0 bottom-0 w-4 bg-green-500 hover:bg-green-600 cursor-pointer transition-colors duration-250 ease-out z-10 rounded-r-lg"
+            onTouchStart={(e) => {
+              e.stopPropagation();
+            }}
+            className="absolute top-0 right-0 bottom-0 w-5 sm:w-4 bg-green-500 hover:bg-green-600 active:bg-green-700 cursor-pointer transition-colors duration-250 ease-out z-10 rounded-r-lg touch-manipulation"
+            style={{ minWidth: '20px', minHeight: '44px' }}
             aria-label="Open card"
           />
         )}
@@ -65,7 +67,11 @@ export const ProjectCard = ({ project, index, isExpanded, onClick }: ProjectCard
               e.stopPropagation();
               onClick();
             }}
-            className="absolute top-0 right-0 bottom-0 w-4 bg-red-500 hover:bg-red-600 cursor-pointer transition-colors duration-250 ease-out z-10 rounded-r-lg"
+            onTouchStart={(e) => {
+              e.stopPropagation();
+            }}
+            className="absolute top-0 right-0 bottom-0 w-5 sm:w-4 bg-red-500 hover:bg-red-600 active:bg-red-700 cursor-pointer transition-colors duration-250 ease-out z-10 rounded-r-lg touch-manipulation"
+            style={{ minWidth: '20px', minHeight: '44px' }}
             aria-label="Close card"
           />
         )}
@@ -206,6 +212,7 @@ export const ProjectCard = ({ project, index, isExpanded, onClick }: ProjectCard
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
               className="p-4 sm:p-6"
+              onClick={onClick}
             >
               <div className="flex items-center justify-between gap-4">
                 <div className="flex-1 min-w-0">
