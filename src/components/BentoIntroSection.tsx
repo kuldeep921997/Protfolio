@@ -17,7 +17,7 @@ const BentoIntroSection = () => {
     .map((m) => ({ value: m!.value, label: m!.label }));
 
   return (
-    <section id="about" className="py-20 px-4">
+    <section id="about" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -34,7 +34,7 @@ const BentoIntroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="md:col-span-7 rounded-2xl bg-card border border-border card-hover p-8"
+            className="md:col-span-7 rounded-2xl bg-card border border-border card-hover p-5 sm:p-6 md:p-8"
           >
             <div className="flex items-center gap-3 mb-4">
               <div className="p-2 rounded-xl bg-primary/10">
@@ -57,7 +57,7 @@ const BentoIntroSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="md:col-span-5 rounded-2xl bg-card border border-border card-hover p-8"
+            className="md:col-span-5 rounded-2xl bg-card border border-border card-hover p-5 sm:p-6 md:p-8"
           >
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 rounded-xl bg-accent/10">
@@ -80,7 +80,7 @@ const BentoIntroSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="md:col-span-4 rounded-2xl bg-card border border-border card-hover p-8"
+            className="md:col-span-4 rounded-2xl bg-card border border-border card-hover p-5 sm:p-6 md:p-8"
           >
             <div className="flex items-center gap-3 mb-4">
               <div className="p-2 rounded-xl bg-primary/10">
@@ -108,7 +108,7 @@ const BentoIntroSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.3 }}
-            className="md:col-span-4 rounded-2xl bg-card border border-border card-hover p-8"
+            className="md:col-span-4 rounded-2xl bg-card border border-border card-hover p-5 sm:p-6 md:p-8"
           >
             <div className="flex items-center gap-3 mb-4">
               <div className="p-2 rounded-xl bg-primary/10">
@@ -145,7 +145,7 @@ const BentoIntroSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.4 }}
-            className="md:col-span-4 rounded-2xl border border-primary/30 bg-primary/5 card-hover p-8 relative overflow-hidden"
+            className="md:col-span-4 rounded-2xl border border-primary/30 bg-primary/5 card-hover p-5 sm:p-6 md:p-8 relative overflow-hidden"
           >
             <div className="absolute -bottom-8 -right-8 w-32 h-32 rounded-full bg-primary/10 blur-[40px]" />
             <div className="relative z-10">

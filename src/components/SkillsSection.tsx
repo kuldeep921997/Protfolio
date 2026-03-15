@@ -35,7 +35,7 @@ const SkillsSection = () => {
     });
 
   return (
-    <section id="skills" className="py-20 px-4">
+    <section id="skills" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -57,7 +57,7 @@ const SkillsSection = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="rounded-2xl bg-card border border-border card-hover p-6 sm:p-8"
+                className="rounded-2xl bg-card border border-border card-hover p-5 sm:p-6 md:p-8"
               >
                 <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8">
                   <div className="flex items-center gap-3 sm:min-w-[200px]">

@@ -6,7 +6,7 @@ const ExperienceSection = () => {
   const experiences = useAppSelector((state) => state.experience.experiences);
 
   return (
-    <section id="experience" className="py-20 px-4">
+    <section id="experience" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -33,7 +33,7 @@ const ExperienceSection = () => {
               >
                 <div className="absolute left-[11px] top-8 w-[17px] h-[17px] rounded-full border-[3px] border-primary bg-background hidden md:block" />
 
-                <div className="rounded-2xl bg-card border border-border card-hover p-6 sm:p-8">
+                <div className="rounded-2xl bg-card border border-border card-hover p-5 sm:p-6 md:p-8">
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
                     <div className="flex items-center gap-3">
                       <div className="p-2 rounded-xl bg-primary/10 md:hidden">

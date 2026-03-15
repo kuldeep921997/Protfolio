@@ -3,13 +3,13 @@ import { ArrowUpRight, Mail, Github, Linkedin } from "lucide-react";
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="py-20 px-4">
+    <section id="contact" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="rounded-2xl bg-card border border-border p-8 sm:p-12 md:p-16 relative overflow-hidden"
+          className="rounded-2xl bg-card border border-border p-6 sm:p-8 md:p-12 lg:p-16 relative overflow-hidden"
         >
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[400px] h-[200px] bg-primary/10 blur-[100px] rounded-full" />
 
@@ -17,7 +17,7 @@ const ContactSection = () => {
             <p className="text-sm font-medium text-primary uppercase tracking-widest mb-4">
               Get in touch
             </p>
-            <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-black mb-6">
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-6">
               Let&apos;s build
               <br />
               something great.
@@ -43,7 +43,7 @@ const ContactSection = () => {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
               <a
                 href="mailto:kuldeep921997@gmail.com"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-primary-foreground font-medium text-sm hover:opacity-90 transition-opacity"
+                className="min-h-[44px] inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-primary text-primary-foreground font-medium text-sm hover:opacity-90 transition-opacity touch-manipulation"
               >
                 <Mail size={16} />
                 Contact Me
@@ -54,7 +54,7 @@ const ContactSection = () => {
                 download="Resume_Kuldeep_V12_4.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-border text-foreground font-medium text-sm hover:bg-secondary transition-colors"
+                className="min-h-[44px] inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full border border-border text-foreground font-medium text-sm hover:bg-secondary transition-colors touch-manipulation"
               >
                 Download Resume
               </a>
@@ -71,7 +71,7 @@ const ContactSection = () => {
                   href={href}
                   target={href.startsWith("http") ? "_blank" : undefined}
                   rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
-                  className="p-3 rounded-full border border-border text-muted-foreground hover:text-foreground hover:border-primary/50 transition-all"
+                  className="min-w-[44px] min-h-[44px] flex items-center justify-center p-3 rounded-full border border-border text-muted-foreground hover:text-foreground hover:border-primary/50 transition-all touch-manipulation"
                   aria-label={label}
                 >
                   <Icon size={18} />

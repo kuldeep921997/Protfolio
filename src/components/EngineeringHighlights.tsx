@@ -48,7 +48,7 @@ const highlights = [
 
 const EngineeringHighlights = () => {
   return (
-    <section className="py-20 px-4">
+    <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -70,7 +70,7 @@ const EngineeringHighlights = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="group rounded-2xl bg-card border border-border card-hover p-8 relative overflow-hidden"
+                className="group rounded-2xl bg-card border border-border card-hover p-5 sm:p-6 md:p-8 relative overflow-hidden"
               >
                 <div className="absolute top-0 right-0 w-24 h-24 bg-primary/5 blur-[40px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <div className="relative z-10">

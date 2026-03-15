@@ -12,7 +12,7 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section id="projects" className="py-20 px-4">
+    <section id="projects" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -32,7 +32,7 @@ const ProjectsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className={`group rounded-2xl bg-card border border-border card-hover p-6 sm:p-8 relative overflow-hidden ${colSpans(i)}`}
+              className={`group rounded-2xl bg-card border border-border card-hover p-5 sm:p-6 md:p-8 relative overflow-hidden ${colSpans(i)}`}
             >
               <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 blur-[50px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
@@ -42,7 +42,7 @@ const ProjectsSection = () => {
                     <div className="p-2 rounded-xl bg-primary/10">
                       <Layers size={18} className="text-primary" />
                     </div>
-                    <h3 className="font-display text-xl font-bold">{project.title}</h3>
+                    <h3 className="font-display text-lg sm:text-xl font-bold break-words">{project.title}</h3>
                   </div>
                   <div className="flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
                     <a
