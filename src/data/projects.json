@@ -163,6 +163,37 @@
         "stores": "Certification and QA processes",
         "data": "Serial number and stone tracking"
       }
+    },
+    {
+      "id": "jio-video-analytics",
+      "title": "Jio Video Analytics (JVA) Platform",
+      "description": "Analytics dashboard platform for managing AI-powered video insights across multiple retail locations, with real-time event visualization and operational monitoring.",
+      "problem": "Retail environments required automated monitoring across large camera networks to detect operational issues such as crowd congestion, restricted-area access, and suspicious activity. Manual CCTV monitoring was inefficient and difficult to scale across multiple locations. The organization needed a centralized platform capable of analyzing video insights and presenting actionable analytics through real-time dashboards.",
+      "architecture": "Developed an analytics dashboard platform for managing AI-powered video insights across multiple retail locations. Built modular and interactive UI components to visualize alerts, camera events, and operational metrics. Implemented dynamic filtering, optimized data rendering, and real-time event visualization for large analytics datasets. Designed scalable frontend architecture supporting multiple modules such as event alerts, movement analysis, and operational monitoring.",
+      "techStack": ["React.js", "TypeScript", "Redux Toolkit", "Node.js", "Express.js", "ApexCharts", "Material UI", "REST APIs"],
+      "outcomes": [
+        {
+          "metric": "Video Analytics",
+          "value": "AI-powered",
+          "description": "Centralized platform for analyzing video insights across camera networks"
+        },
+        {
+          "metric": "Real-time Dashboards",
+          "value": "Actionable",
+          "description": "Alerts, camera events, and operational metrics visualization"
+        },
+        {
+          "metric": "Modules",
+          "value": "Scalable",
+          "description": "Event alerts, movement analysis, and operational monitoring"
+        }
+      ],
+      "scale": {
+        "users": "Multi-location retail operations",
+        "transactions": "Real-time event visualization",
+        "stores": "Multiple retail locations",
+        "data": "Large analytics datasets"
+      }
     }
   ]
 }
