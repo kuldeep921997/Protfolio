@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Monitor, Server, Database, Container, GitBranch } from "lucide-react";
+import { Monitor, Server, Container, GitBranch } from "lucide-react";
 import { useAppSelector } from "@/app/hooks";
 
 const categoryConfig: Record<

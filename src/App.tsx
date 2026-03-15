@@ -9,8 +9,6 @@ function App() {
     document.documentElement.classList.toggle("dark", theme === "dark");
   }, []);
 
-  const basename = import.meta.env.BASE_URL;
-
   return (
     <Provider store={store}>
       <div className="min-h-screen bg-background transition-colors duration-250 ease-out">
