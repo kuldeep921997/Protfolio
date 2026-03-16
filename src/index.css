@@ -85,6 +85,34 @@
     @apply bg-card/80 backdrop-blur-xl border border-border;
   }
 
+  /* Header bar: glass that fades at bottom and sides (no sharp edges) */
+  .nav-glass-fade {
+    background: linear-gradient(
+      to bottom,
+      hsl(var(--card) / 0.82),
+      hsl(var(--card) / 0.4) 60%,
+      transparent
+    );
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black 6%,
+      black 94%,
+      transparent 100%
+    );
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black 6%,
+      black 94%,
+      transparent 100%
+    );
+    mask-size: 100% 100%;
+    -webkit-mask-size: 100% 100%;
+  }
+
   .glow-border {
     box-shadow: 0 0 0 1px hsl(var(--border)),
                 0 0 20px -5px hsl(var(--glow) / 0.15);

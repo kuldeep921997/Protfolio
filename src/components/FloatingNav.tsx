@@ -54,28 +54,30 @@ const FloatingNav = () => {
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ type: "spring", stiffness: 300, damping: 30 }}
-        className={`fixed top-3 left-3 right-3 sm:top-4 sm:left-4 sm:right-4 z-50 flex items-center justify-between rounded-full px-3 py-2 sm:px-4 sm:py-2.5 transition-all duration-300 ${scrolled ? "glass glow-border" : "bg-transparent border border-transparent"}`}
+        className={`fixed inset-x-0 top-0 z-50 flex items-center justify-between px-4 sm:px-6 lg:px-8 py-[6.5px] sm:py-[8.5px] transition-all duration-300 ${scrolled ? "nav-glass-fade" : "bg-transparent"}`}
       >
-        {/* Left: Available for opportunities - shorter on very small screens */}
-        <div className="flex items-center gap-2 px-2 py-1.5 sm:px-3 sm:py-1.5 rounded-full border border-border bg-card/50 text-xs sm:text-sm text-muted-foreground shrink-0 max-w-[180px] sm:max-w-none truncate sm:truncate-none">
-          <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-accent animate-pulse shrink-0" />
-          <span className="truncate">Available for opportunities</span>
-        </div>
-
-        {/* Right: Desktop nav links + theme | Mobile: hamburger + theme */}
-        <div className="flex items-center gap-2 sm:gap-5 md:gap-6">
-          {/* Desktop: nav links */}
-          <div className="hidden md:flex items-center gap-5 lg:gap-6">
-            {navItems.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                className="text-sm font-medium text-foreground/90 hover:text-foreground transition-colors whitespace-nowrap"
-              >
-                {item.label}
-              </a>
-            ))}
+        {/* Inner container for content alignment on wide screens */}
+        <div className="w-full flex items-center justify-between max-w-[1600px] mx-auto">
+          {/* Left: Available for opportunities */}
+          <div className="flex items-center gap-2 px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-full bg-card/40 text-xs sm:text-sm text-muted-foreground shrink-0 max-w-[180px] sm:max-w-none truncate sm:truncate-none backdrop-blur-sm">
+            <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-accent animate-pulse shrink-0" />
+            <span className="truncate">Available for opportunities</span>
           </div>
+
+          {/* Right: Desktop nav links + theme | Mobile: hamburger + theme */}
+          <div className="flex items-center gap-1 sm:gap-4 md:gap-6">
+            {/* Desktop: nav links */}
+            <div className="hidden md:flex items-center gap-6 lg:gap-8">
+              {navItems.map((item) => (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  className="text-[13px] sm:text-sm font-medium text-foreground/85 hover:text-foreground transition-colors duration-200 whitespace-nowrap tracking-tight"
+                >
+                  {item.label}
+                </a>
+              ))}
+            </div>
 
           {/* Mobile: hamburger button - min 44px touch target */}
           <button
@@ -96,6 +98,7 @@ const FloatingNav = () => {
           >
             {isDark ? <Sun size={20} /> : <Moon size={20} />}
           </button>
+        </div>
         </div>
       </motion.nav>
 

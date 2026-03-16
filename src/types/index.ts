@@ -23,6 +23,11 @@ export interface Achievement {
   metrics?: string;
 }
 
+export interface FeaturedStat {
+  value: string;
+  label: string;
+}
+
 export interface Project {
   id: string;
   title: string;
@@ -33,6 +38,10 @@ export interface Project {
   outcomes: ProjectOutcome[];
   scale: ScaleMetrics;
   images?: string[];
+  /** Shown in Featured Projects right panel (e.g. "1000+", "LOCATIONS") */
+  featuredStats?: FeaturedStat[];
+  /** Shown below visual placeholder (e.g. "RFID · INVENTORY · MULTI-VENDOR") */
+  featuredKeywords?: string;
 }
 
 export interface ProjectOutcome {
@@ -73,5 +82,24 @@ export interface AppState {
   theme: 'light' | 'dark';
   activeSection: string;
   expandedItems: Set<string>;
+}
+
+export interface TechSkill {
+  name: string;
+  sub: string;
+}
+
+export interface TechCategory {
+  id: number;
+  label: string;
+  num: string;
+  color: string;
+  desc: string;
+  skills: TechSkill[];
+}
+
+export interface TechArchitectureData {
+  categories: TechCategory[];
+  fullStackTags: string[];
 }
 

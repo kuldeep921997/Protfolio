@@ -44,7 +44,50 @@
         "transactions": "1.28M+ daily transactions",
         "stores": "1000+ locations nationwide",
         "data": "99.68% API success rate"
-      }
+      },
+      "featuredStats": [
+        { "value": "1000+", "label": "LOCATIONS" },
+        { "value": "99%", "label": "ACCURACY" },
+        { "value": "5x", "label": "FASTER COUNT" }
+      ],
+      "featuredKeywords": "RFID · INVENTORY · MULTI-VENDOR"
+    },
+    {
+      "id": "jio-video-analytics",
+      "title": "Jio Video Analytics (JVA) Platform",
+      "description": "Analytics dashboard platform for managing AI-powered video insights across multiple retail locations, with real-time event visualization and operational monitoring.",
+      "problem": "Retail environments required automated monitoring across large camera networks to detect operational issues such as crowd congestion, restricted-area access, and suspicious activity. Manual CCTV monitoring was inefficient and difficult to scale across multiple locations. The organization needed a centralized platform capable of analyzing video insights and presenting actionable analytics through real-time dashboards.",
+      "architecture": "Developed an analytics dashboard platform for managing AI-powered video insights across multiple retail locations. Built modular and interactive UI components to visualize alerts, camera events, and operational metrics. Implemented dynamic filtering, optimized data rendering, and real-time event visualization for large analytics datasets. Designed scalable frontend architecture supporting multiple modules such as event alerts, movement analysis, and operational monitoring.",
+      "techStack": ["React.js", "TypeScript", "Redux Toolkit", "Node.js", "Express.js", "ApexCharts", "Material UI", "REST APIs"],
+      "outcomes": [
+        {
+          "metric": "Video Analytics",
+          "value": "AI-powered",
+          "description": "Centralized platform for analyzing video insights across camera networks"
+        },
+        {
+          "metric": "Real-time Dashboards",
+          "value": "Actionable",
+          "description": "Alerts, camera events, and operational metrics visualization"
+        },
+        {
+          "metric": "Modules",
+          "value": "Scalable",
+          "description": "Event alerts, movement analysis, and operational monitoring"
+        }
+      ],
+      "scale": {
+        "users": "Multi-location retail operations",
+        "transactions": "Real-time event visualization",
+        "stores": "Multiple retail locations",
+        "data": "Large analytics datasets"
+      },
+      "featuredStats": [
+        { "value": "AI", "label": "VIDEO INSIGHTS" },
+        { "value": "Real-time", "label": "DASHBOARDS" },
+        { "value": "Scalable", "label": "MODULES" }
+      ],
+      "featuredKeywords": "REACT · APEXCHARTS · ANALYTICS"
     },
     {
       "id": "scholarship-portal",
@@ -90,7 +133,50 @@
         "transactions": "50+ concurrent interview sessions",
         "stores": "5 distinct user personas",
         "data": "Real-time scoring and analytics"
-      }
+      },
+      "featuredStats": [
+        { "value": "50k+", "label": "APPLICATIONS" },
+        { "value": "50+", "label": "CONCURRENT SESSIONS" },
+        { "value": "Auto", "label": "DOC PROCESSING" }
+      ],
+      "featuredKeywords": "MERN · OCR · INTERVIEW PORTAL"
+    },
+    {
+      "id": "reliance-jewels",
+      "title": "Reliance Jewels Integration",
+      "description": "Technical architecture planning and frontend implementation for jewelry retail platform with specialized workflows for inventory management, certification, and quality assurance",
+      "problem": "Jewelry retail requires specialized inventory management with unique serial number tracking, stone tracking, and metal purity verification. Needed frontend architecture patterns adapted to jewelry-specific workflows with seamless backend integration.",
+      "architecture": "Contributed to technical architecture planning through strategic design workshops and whiteboarding sessions. Designed frontend architecture patterns for unique serial number management, stone tracking, and metal purity verification. Implemented frontend components for certification document management and quality assurance processes.",
+      "techStack": ["React.js", "TypeScript", "Node.js", "Azure DevOps"],
+      "outcomes": [
+        {
+          "metric": "Architecture Planning",
+          "value": "Complete",
+          "description": "Participated in strategic design workshops and whiteboarding sessions"
+        },
+        {
+          "metric": "Specialized Workflows",
+          "value": "Implemented",
+          "description": "Designed patterns for serial number, stone tracking, and purity verification"
+        },
+        {
+          "metric": "Integration",
+          "value": "Seamless",
+          "description": "Ensured seamless integration with existing backend inventory systems"
+        }
+      ],
+      "scale": {
+        "users": "Jewelry retail operations",
+        "transactions": "Inventory management workflows",
+        "stores": "Certification and QA processes",
+        "data": "Serial number and stone tracking"
+      },
+      "featuredStats": [
+        { "value": "Full", "label": "ARCHITECTURE" },
+        { "value": "Serial", "label": "TRACKING" },
+        { "value": "QA", "label": "CERTIFICATION" }
+      ],
+      "featuredKeywords": "REACT · JEWELRY · CERTIFICATION"
     },
     {
       "id": "trading-simulator",
@@ -131,69 +217,13 @@
         "transactions": "8K+ simulated trades daily",
         "stores": "ML-based recommendations",
         "data": "Real-time market data processing"
-      }
-    },
-    {
-      "id": "reliance-jewels",
-      "title": "Reliance Jewels Integration",
-      "description": "Technical architecture planning and frontend implementation for jewelry retail platform with specialized workflows for inventory management, certification, and quality assurance",
-      "problem": "Jewelry retail requires specialized inventory management with unique serial number tracking, stone tracking, and metal purity verification. Needed frontend architecture patterns adapted to jewelry-specific workflows with seamless backend integration.",
-      "architecture": "Contributed to technical architecture planning through strategic design workshops and whiteboarding sessions. Designed frontend architecture patterns for unique serial number management, stone tracking, and metal purity verification. Implemented frontend components for certification document management and quality assurance processes.",
-      "techStack": ["React.js", "TypeScript", "Node.js", "Azure DevOps"],
-      "outcomes": [
-        {
-          "metric": "Architecture Planning",
-          "value": "Complete",
-          "description": "Participated in strategic design workshops and whiteboarding sessions"
-        },
-        {
-          "metric": "Specialized Workflows",
-          "value": "Implemented",
-          "description": "Designed patterns for serial number, stone tracking, and purity verification"
-        },
-        {
-          "metric": "Integration",
-          "value": "Seamless",
-          "description": "Ensured seamless integration with existing backend inventory systems"
-        }
+      },
+      "featuredStats": [
+        { "value": "8K+", "label": "DAILY TRADES" },
+        { "value": "<100ms", "label": "RESPONSE TIME" },
+        { "value": "40-60%", "label": "RETENTION" }
       ],
-      "scale": {
-        "users": "Jewelry retail operations",
-        "transactions": "Inventory management workflows",
-        "stores": "Certification and QA processes",
-        "data": "Serial number and stone tracking"
-      }
-    },
-    {
-      "id": "jio-video-analytics",
-      "title": "Jio Video Analytics (JVA) Platform",
-      "description": "Analytics dashboard platform for managing AI-powered video insights across multiple retail locations, with real-time event visualization and operational monitoring.",
-      "problem": "Retail environments required automated monitoring across large camera networks to detect operational issues such as crowd congestion, restricted-area access, and suspicious activity. Manual CCTV monitoring was inefficient and difficult to scale across multiple locations. The organization needed a centralized platform capable of analyzing video insights and presenting actionable analytics through real-time dashboards.",
-      "architecture": "Developed an analytics dashboard platform for managing AI-powered video insights across multiple retail locations. Built modular and interactive UI components to visualize alerts, camera events, and operational metrics. Implemented dynamic filtering, optimized data rendering, and real-time event visualization for large analytics datasets. Designed scalable frontend architecture supporting multiple modules such as event alerts, movement analysis, and operational monitoring.",
-      "techStack": ["React.js", "TypeScript", "Redux Toolkit", "Node.js", "Express.js", "ApexCharts", "Material UI", "REST APIs"],
-      "outcomes": [
-        {
-          "metric": "Video Analytics",
-          "value": "AI-powered",
-          "description": "Centralized platform for analyzing video insights across camera networks"
-        },
-        {
-          "metric": "Real-time Dashboards",
-          "value": "Actionable",
-          "description": "Alerts, camera events, and operational metrics visualization"
-        },
-        {
-          "metric": "Modules",
-          "value": "Scalable",
-          "description": "Event alerts, movement analysis, and operational monitoring"
-        }
-      ],
-      "scale": {
-        "users": "Multi-location retail operations",
-        "transactions": "Real-time event visualization",
-        "stores": "Multiple retail locations",
-        "data": "Large analytics datasets"
-      }
+      "featuredKeywords": "SVELTE · ML · REAL-TIME"
     }
   ]
 }

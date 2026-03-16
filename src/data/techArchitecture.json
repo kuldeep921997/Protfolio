@@ -1,0 +1,87 @@
+{
+  "categories": [
+    {
+      "id": 0,
+      "label": "Frontend",
+      "num": "01",
+      "color": "#639922",
+      "desc": "Building performant, accessible, and visually polished user interfaces — from component architecture to state management and bundle optimization.",
+      "skills": [
+        { "name": "JavaScript ES6+", "sub": "Core language" },
+        { "name": "TypeScript", "sub": "Type safety" },
+        { "name": "React.js", "sub": "UI framework" },
+        { "name": "Redux Toolkit", "sub": "State management" },
+        { "name": "Next.js", "sub": "SSR / SSG" },
+        { "name": "Svelte.js", "sub": "Reactive UI" },
+        { "name": "HTML5 / CSS3", "sub": "Web standards" },
+        { "name": "Tailwind CSS", "sub": "Utility-first" },
+        { "name": "Material UI", "sub": "Component lib" },
+        { "name": "Bootstrap", "sub": "Responsive grid" }
+      ]
+    },
+    {
+      "id": 1,
+      "label": "Backend",
+      "num": "02",
+      "color": "#185FA5",
+      "desc": "Designing scalable server-side systems, RESTful APIs, and data layers that power production applications at scale.",
+      "skills": [
+        { "name": "Node.js", "sub": "Runtime" },
+        { "name": "Express.js", "sub": "Web framework" },
+        { "name": "Django", "sub": "Python framework" },
+        { "name": "Python", "sub": "Language" },
+        { "name": "REST APIs", "sub": "Integration" },
+        { "name": "MySQL", "sub": "Relational DB" },
+        { "name": "MongoDB", "sub": "Document DB" },
+        { "name": "PostgreSQL", "sub": "Relational DB" },
+        { "name": "Redis", "sub": "Caching / queues" }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Infrastructure",
+      "num": "03",
+      "color": "#BA7517",
+      "desc": "Cloud infrastructure, containerization, and continuous delivery pipelines that keep systems reliable and teams moving fast.",
+      "skills": [
+        { "name": "AWS", "sub": "Cloud platform" },
+        { "name": "Azure DevOps", "sub": "CI/CD & ALM" },
+        { "name": "Docker", "sub": "Containerization" },
+        { "name": "CI/CD Pipelines", "sub": "Automation" },
+        { "name": "Git", "sub": "Version control" }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Architecture",
+      "num": "04",
+      "color": "#7F77DD",
+      "desc": "Thinking in systems — from microservices topology to component boundaries, performance budgets, and scalable state patterns.",
+      "skills": [
+        { "name": "Microservices", "sub": "Architecture" },
+        { "name": "Scalable Systems", "sub": "System design" },
+        { "name": "Performance Opt.", "sub": "Core web vitals" },
+        { "name": "Component Arch.", "sub": "Design systems" },
+        { "name": "State Patterns", "sub": "Management" },
+        { "name": "Code Splitting", "sub": "Lazy loading" }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Leadership",
+      "num": "05",
+      "color": "#c8a84b",
+      "desc": "Guiding teams through technical complexity — mentoring engineers, enforcing quality standards, and aligning delivery with stakeholder goals.",
+      "skills": [
+        { "name": "Team Mentoring", "sub": "Growth & guidance" },
+        { "name": "Code Reviews", "sub": "Quality assurance" },
+        { "name": "Agile / Scrum", "sub": "Process" },
+        { "name": "Stakeholder Mgmt", "sub": "Alignment" }
+      ]
+    }
+  ],
+  "fullStackTags": [
+    "React.js", "TypeScript", "Node.js", "Next.js", "Svelte.js",
+    "MongoDB", "Redis", "Docker", "AWS", "Azure DevOps", "PostgreSQL", "Python"
+  ]
+}
