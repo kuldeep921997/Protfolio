@@ -69,8 +69,8 @@ const HeroSection = () => {
             View Projects
           </a>
           <a
-            href={`${import.meta.env.BASE_URL}Resume_Kuldeep_V12_4.pdf`}
-            download="Resume_Kuldeep_V12_4.pdf"
+            href={`${import.meta.env.BASE_URL}Resume_Kuldeep_V12_5.pdf`}
+            download="Resume_Kuldeep_V12_5.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="min-h-[44px] inline-flex items-center justify-center gap-2 px-5 py-3 sm:px-6 rounded-full border border-border text-foreground font-medium text-sm hover:bg-secondary transition-colors touch-manipulation"
