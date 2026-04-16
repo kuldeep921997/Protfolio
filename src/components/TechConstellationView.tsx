@@ -204,11 +204,12 @@ const TechConstellationView = ({
       timeRef.current += 0.008;
       const time = timeRef.current;
 
+      const isDark = document.documentElement.classList.contains("dark");
       [0.26, 0.40].forEach((r) => {
         const orbitR = Math.min(logicalW, logicalH) * r;
         ctx.beginPath();
         ctx.arc(cx, cy, orbitR, 0, Math.PI * 2);
-        ctx.strokeStyle = "rgba(255,255,255,0.04)";
+        ctx.strokeStyle = isDark ? "rgba(255,255,255,0.04)" : "rgba(0,0,0,0.08)";
         ctx.lineWidth = 1;
         ctx.setLineDash([4, 8]);
         ctx.stroke();
@@ -286,7 +287,8 @@ const TechConstellationView = ({
 
         ctx.beginPath();
         ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
-        ctx.fillStyle = n.isCenter ? cat.color + "22" : isHov ? cat.color + "1a" : "#0a0a0a";
+        const nodeBg = isDark ? "#0a0a0a" : "#f4f4f5";
+        ctx.fillStyle = n.isCenter ? cat.color + "22" : isHov ? cat.color + "1a" : nodeBg;
         ctx.fill();
 
         if (n.isCenter) {
@@ -299,14 +301,15 @@ const TechConstellationView = ({
           ctx.stroke();
         }
 
-        ctx.fillStyle = n.isCenter ? cat.color : isHov ? "#f0ede8" : "rgba(240,237,232,0.7)";
+        const textColor = n.isCenter ? cat.color : isHov ? (isDark ? "#f0ede8" : "#18181b") : (isDark ? "rgba(240,237,232,0.7)" : "rgba(24,24,27,0.85)");
+        ctx.fillStyle = textColor;
         ctx.font = `${n.isCenter ? "500" : "400"} ${n.isCenter ? "13px" : "11px"} "Inter", sans-serif`;
         ctx.textAlign = "center";
         ctx.textBaseline = "middle";
 
         if (n.isCenter) {
           ctx.fillText(n.label, n.x, n.y - 5);
-          ctx.fillStyle = "rgba(240,237,232,0.35)";
+          ctx.fillStyle = isDark ? "rgba(240,237,232,0.35)" : "rgba(24,24,27,0.5)";
           ctx.font = '300 10px "Inter", sans-serif';
           ctx.fillText(n.sub, n.x, n.y + 8);
         } else {
@@ -423,7 +426,7 @@ const TechConstellationView = ({
       {/* Right: Constellation (60%) — on mobile shown first via order */}
       <div
         ref={containerRef}
-        className="relative w-full rounded-xl overflow-hidden bg-[#0a0a0a] min-h-[400px] md:-ml-12 order-1 md:order-2"
+        className="relative w-full min-h-[400px] md:-ml-12 order-1 md:order-2"
         style={{ height: "min(680px, 88vmin)", minHeight: "400px" }}
       >
         <canvas
@@ -438,7 +441,7 @@ const TechConstellationView = ({
         />
         {tooltip.show && (
           <div
-            className="pointer-events-none absolute z-10 rounded-lg border px-3 py-2 text-xs font-medium text-[#f0ede8] bg-[#161616] shadow-lg transition-opacity"
+            className="pointer-events-none absolute z-10 rounded-lg border border-border px-3 py-2 text-xs font-medium text-card-foreground bg-card shadow-lg transition-opacity"
             style={{
               left: Math.min(tooltip.x, (containerRef.current?.offsetWidth ?? 300) - 160),
               top: tooltip.y,
@@ -446,7 +449,7 @@ const TechConstellationView = ({
             }}
           >
             <div>{tooltip.name}</div>
-            <div className="text-[10px] text-[rgba(240,237,232,0.45)] font-light mt-0.5">
+            <div className="text-[10px] text-muted-foreground font-light mt-0.5">
               {tooltip.sub}
             </div>
           </div>

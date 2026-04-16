@@ -13,7 +13,7 @@ const ProjectsSection = () => {
   return (
     <section
       id="projects"
-      className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-zinc-950 text-zinc-100"
+      className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-background text-foreground"
     >
       <div className="max-w-6xl mx-auto">
         {/* Header: WORK + Featured Projects */}
@@ -23,11 +23,11 @@ const ProjectsSection = () => {
           viewport={{ once: true }}
           className="mb-10 select-none"
         >
-          <p className="text-sm font-medium text-zinc-400 uppercase tracking-widest mb-2 font-sans">
+          <p className="text-sm font-medium text-muted-foreground uppercase tracking-widest mb-2 font-sans">
             Work
           </p>
           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight">
-            <span className="text-white">Featured </span>
+            <span className="text-foreground">Featured </span>
             <span className="text-amber-400">Projects</span>
           </h2>
         </motion.div>
@@ -43,8 +43,8 @@ const ProjectsSection = () => {
                 className={`select-none shrink-0 min-h-[44px] touch-manipulation
                   px-4 py-2.5 rounded-lg border text-sm font-medium transition-colors
                   ${i === selectedIndex
-                    ? "border border-zinc-600 border-b-2 border-b-amber-400 text-amber-400"
-                    : "border border-zinc-600 text-zinc-400 hover:text-zinc-200 hover:border-zinc-500"
+                    ? "border-border border-b-2 border-b-amber-400 text-amber-400"
+                    : "border-border text-muted-foreground hover:text-foreground hover:border-border/80"
                   }
                 `}
               >
@@ -75,7 +75,7 @@ const ProjectsSection = () => {
               </span>
 
               <div className="relative z-10 pt-4">
-                <h3 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6 break-words">
+                <h3 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-6 break-words">
                   {project.title}
                 </h3>
 
@@ -84,7 +84,7 @@ const ProjectsSection = () => {
                     <p className="text-xs font-semibold uppercase tracking-wider text-amber-400 mb-1.5">
                       Problem
                     </p>
-                    <p className="text-sm sm:text-base text-zinc-400 leading-relaxed">
+                    <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                       {project.problem}
                     </p>
                   </div>
@@ -92,7 +92,7 @@ const ProjectsSection = () => {
                     <p className="text-xs font-semibold uppercase tracking-wider text-amber-400 mb-1.5">
                       Solution
                     </p>
-                    <p className="text-sm sm:text-base text-zinc-400 leading-relaxed">
+                    <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                       {project.architecture}
                     </p>
                   </div>
@@ -102,7 +102,7 @@ const ProjectsSection = () => {
                   {project.techStack.map((t) => (
                     <span
                       key={t}
-                      className="px-3 py-1.5 text-xs rounded-lg border border-amber-400/50 text-zinc-300 bg-zinc-900/80"
+                      className="px-3 py-1.5 text-xs rounded-lg border border-amber-400/50 text-foreground bg-muted/80"
                     >
                       {t}
                     </span>
@@ -114,11 +114,11 @@ const ProjectsSection = () => {
 
             {/* Right section: visual placeholder (hidden on mobile) + summary stats */}
             <div className="lg:col-span-4 flex flex-col gap-6">
-              <div className="hidden lg:flex rounded-xl bg-zinc-800/80 border border-zinc-700/50 min-h-[200px] sm:min-h-[240px] flex-col items-center justify-center gap-4 p-6">
-                <div className="p-4 rounded-xl bg-zinc-700/50">
+              <div className="hidden lg:flex rounded-xl bg-card border border-border min-h-[200px] sm:min-h-[240px] flex-col items-center justify-center gap-4 p-6">
+                <div className="p-4 rounded-xl bg-muted/50">
                   <Layers size={40} className="text-amber-400/80" />
                 </div>
-                <p className="text-xs uppercase tracking-wider text-zinc-500 text-center">
+                <p className="text-xs uppercase tracking-wider text-muted-foreground text-center">
                   {keywords}
                 </p>
               </div>
@@ -130,7 +130,7 @@ const ProjectsSection = () => {
                       <p className="font-display text-base sm:text-2xl font-bold text-amber-400 truncate" title={s.value}>
                         {s.value}
                       </p>
-                      <p className="text-[9px] sm:text-xs uppercase tracking-wider text-zinc-500 mt-1 truncate" title={s.label}>
+                      <p className="text-[9px] sm:text-xs uppercase tracking-wider text-muted-foreground mt-1 truncate" title={s.label}>
                         {s.label}
                       </p>
                     </div>
