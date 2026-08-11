@@ -50,8 +50,8 @@ const ContactSection = () => {
                 <ArrowUpRight size={16} />
               </a>
               <a
-                href={`${import.meta.env.BASE_URL}Resume_Kuldeep_V12_6.pdf`}
-                download="Resume_Kuldeep_V12_6.pdf"
+                href={`${import.meta.env.BASE_URL}Resume_Kuldeep_11_08_2026.pdf`}
+                download="Resume_Kuldeep_11_08_2026.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="min-h-[44px] inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full border border-border text-foreground font-medium text-sm hover:bg-secondary transition-colors touch-manipulation"
