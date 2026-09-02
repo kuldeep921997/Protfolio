@@ -10,6 +10,9 @@ export interface Experience {
   company: string;
   role: string;
   period: string;
+  /** Earlier title held on the same platform, e.g. a contract engagement that
+      later converted to payroll. Rendered under the current role. */
+  priorRole?: string;
   location?: string;
   highlights: string[];
   achievements: Achievement[];

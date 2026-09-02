@@ -58,11 +58,18 @@ const FloatingNav = () => {
       >
         {/* Inner container for content alignment on wide screens */}
         <div className="w-full flex items-center justify-between max-w-[1600px] mx-auto">
-          {/* Left: Available for opportunities */}
-          <div className="flex items-center gap-2 px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-full bg-card/40 text-xs sm:text-sm text-muted-foreground shrink-0 max-w-[180px] sm:max-w-none truncate sm:truncate-none backdrop-blur-sm">
-            <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-accent animate-pulse shrink-0" />
-            <span className="truncate">Available for opportunities</span>
-          </div>
+          {/* Left: wordmark + availability. The name was previously absent from
+              the entire viewport until the footer -- on a personal site it is
+              the one thing that always needs to be on screen. */}
+          <a href="#home" className="flex items-center gap-3 shrink-0 min-w-0 group">
+            <span className="font-display text-[15px] sm:text-base font-bold tracking-tight text-foreground whitespace-nowrap">
+              Kuldeep Lodhi
+            </span>
+            <span className="hidden sm:inline-flex items-center gap-2 px-2.5 py-1 rounded-full border border-border bg-card/50 text-[11px] text-muted-foreground backdrop-blur-sm whitespace-nowrap">
+              <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse shrink-0" />
+              Available
+            </span>
+          </a>
 
           {/* Right: Desktop nav links + theme | Mobile: hamburger + theme */}
           <div className="flex items-center gap-1 sm:gap-4 md:gap-6">

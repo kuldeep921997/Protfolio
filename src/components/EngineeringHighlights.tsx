@@ -1,93 +1,133 @@
 import { motion } from "framer-motion";
 import { Gauge, Puzzle, Network, LayoutDashboard, Radio, Database } from "lucide-react";
 
-// Every figure here is mirrored from the resume so the two never disagree.
-// If you change a number in one place, change it in the other.
-const highlights = [
+/**
+ * Technical highlights.
+ *
+ * The previous version was six identically-sized cards where the metric sat in
+ * a small corner pill and four lines of prose took all the visual weight --
+ * hierarchy inverted against the most persuasive content on the page.
+ *
+ * Now the number IS the card: large, tabular, high contrast, with one or two
+ * supporting lines. Two cards span two columns so the grid has rhythm instead
+ * of repeating a single shape six times.
+ *
+ * Every figure mirrors the resume. If you change a number here, change it there.
+ */
+
+type Highlight = {
+  icon: typeof Gauge;
+  label: string;
+  value: string;
+  suffix?: string;
+  detail: string;
+  wide?: boolean;
+  tone?: "accent";
+};
+
+const highlights: Highlight[] = [
   {
     icon: Gauge,
-    title: "Rendering Performance",
-    description:
-      "Re-engineered the heaviest inventory dashboards with list virtualization, memoized selectors and route-level code-splitting, cutting time-to-interactive from 8s to 3s on views of 50,000+ rows.",
-    metric: "8s → 3s",
-  },
-  {
-    icon: Radio,
-    title: "Real-Time Data Layer",
-    description:
-      "Built the platform's real-time layer, consuming Kafka-published Stock-on-Hand and RFID tracking events across 15 topics so store teams see stock movement in under 5 seconds instead of waiting on a 15-minute batch refresh.",
-    metric: "15-min batch → under 5s",
-  },
-  {
-    icon: Network,
-    title: "High-Throughput Integrations",
-    description:
-      "Designed integrations processing 1.28M+ daily transactions at a 99.68% API success rate, spanning 25–30 backend services across the inventory and analytics stack.",
-    metric: "1.28M+ Daily Txns",
+    label: "Rendering performance",
+    value: "8s → 3s",
+    detail:
+      "Time-to-interactive on views rendering 50,000+ rows, after list virtualization, memoized selectors and route-level code-splitting.",
+    wide: true,
+    tone: "accent",
   },
   {
     icon: LayoutDashboard,
-    title: "Enterprise Dashboard Platforms",
-    description:
-      "Architected the Store, Cluster and Self-Checkout portals that 12,000+ daily users rely on to manage INR 1,000 Cr of live inventory across 1,900+ stores and 6 retail brands.",
-    metric: "12,000+ Users",
+    label: "Daily users",
+    value: "12,000+",
+    detail: "Across 1,900+ stores and 6 retail brands.",
+  },
+  {
+    icon: Network,
+    label: "Daily transactions",
+    value: "1.28M",
+    suffix: "+",
+    detail: "At a 99.68% API success rate across 25–30 backend services.",
+  },
+  {
+    icon: Radio,
+    label: "Event latency",
+    value: "<5s",
+    detail: "Kafka-published stock movement, replacing a 15-minute batch refresh.",
+    tone: "accent",
   },
   {
     icon: Puzzle,
-    title: "Design System Architecture",
-    description:
-      "Established a shared library of 50+ TypeScript components and a standardized Redux data layer, removing 30% of duplicated UI code and cutting new-module scaffolding from 5 days to 2.",
-    metric: "50+ Components",
+    label: "Shared components",
+    value: "50+",
+    detail: "Design-system library that removed 30% of duplicated UI code.",
   },
   {
     icon: Database,
-    title: "Query and Contract Design",
-    description:
-      "Authored the REST contracts and PostgreSQL stored procedures behind high-volume Stock-on-Hand aggregation, cutting the slowest store-level report from 10s to 2s.",
-    metric: "10s → 2s",
+    label: "Query & contract design",
+    value: "10s → 2s",
+    detail:
+      "Slowest store-level report, after moving Stock-on-Hand aggregation into PostgreSQL stored procedures and reworking the index strategy.",
+    wide: true,
+    tone: "accent",
   },
 ];
 
 const EngineeringHighlights = () => {
   return (
-    <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6">
-      <div className="max-w-6xl mx-auto">
+    <section className="section">
+      <div className="shell">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mb-12"
+          viewport={{ once: true, margin: "-80px" }}
+          className="mb-8 sm:mb-10"
         >
-          <p className="text-sm font-medium text-primary uppercase tracking-widest mb-2">Engineering</p>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold">Technical Highlights</h2>
+          <p className="eyebrow">Engineering</p>
+          <h2 className="section-title">Technical highlights</h2>
+          <p className="mt-3 text-[15px] text-muted-foreground measure">
+            Measured outcomes from production systems, not estimates. Each figure is one I can walk
+            through end to end.
+          </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
           {highlights.map((item, i) => {
             const Icon = item.icon;
             return (
-              <motion.div
-                key={item.title}
-                initial={{ opacity: 0, y: 20 }}
+              <motion.article
+                key={item.label}
+                initial={{ opacity: 0, y: 16 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-                className="group rounded-2xl bg-card border border-border card-hover p-5 sm:p-6 md:p-8 relative overflow-hidden"
+                viewport={{ once: true, margin: "-60px" }}
+                transition={{ duration: 0.35, delay: Math.min(i * 0.06, 0.3) }}
+                className={`card-base card-hover p-5 sm:p-6 flex flex-col ${
+                  item.wide ? "lg:col-span-2" : ""
+                }`}
               >
-                <div className="absolute top-0 right-0 w-24 h-24 bg-primary/5 blur-[40px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                <div className="relative z-10">
-                  <div className="flex items-center justify-between mb-4">
-                    <div className="p-2.5 rounded-xl bg-primary/10">
-                      <Icon size={22} className="text-primary" />
-                    </div>
-                    <span className="px-3 py-1 text-xs font-semibold rounded-full bg-accent/10 text-accent">
-                      {item.metric}
-                    </span>
-                  </div>
-                  <h3 className="font-display text-lg font-bold mb-2">{item.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
+                <div className="flex items-center gap-2.5 mb-4">
+                  <Icon size={16} className="text-primary-soft shrink-0" aria-hidden />
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.1em] text-primary-soft">
+                    {item.label}
+                  </p>
                 </div>
-              </motion.div>
+
+                <p
+                  className={`num font-display font-extrabold leading-none mb-2.5
+                    text-[2rem] sm:text-[2.375rem]
+                    ${item.tone === "accent" ? "text-accent" : "text-foreground"}`}
+                >
+                  {item.value}
+                  {item.suffix && (
+                    <span className="text-xl sm:text-2xl text-muted-foreground font-bold">
+                      {item.suffix}
+                    </span>
+                  )}
+                </p>
+
+                <p className="text-[13px] text-muted-foreground leading-relaxed measure-sm">
+                  {item.detail}
+                </p>
+              </motion.article>
             );
           })}
         </div>

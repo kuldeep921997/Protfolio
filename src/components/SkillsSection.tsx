@@ -19,8 +19,8 @@ const SkillsSection = () => {
   const activeCategory: TechCategory = categories[activeCategoryIndex];
 
   return (
-    <section id="skills" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6">
-      <div className="max-w-6xl mx-auto">
+    <section id="skills" className="section">
+      <div className="shell">
         {/* Header: Tech Architecture + View tabs (Constellation | Cards) on the right */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -29,12 +29,10 @@ const SkillsSection = () => {
           className="mb-6 sm:mb-8 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4"
         >
           <div>
-            <p className="text-sm font-medium text-primary uppercase tracking-[0.18em] mb-2">
-              Stack
-            </p>
-            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight">
+            <p className="eyebrow">Stack</p>
+            <h2 className="section-title">
               <span className="text-foreground">Tech </span>
-              <span className="text-primary">Architecture</span>
+              <span className="text-primary">architecture</span>
             </h2>
           </div>
           <div className="flex w-fit rounded-xl border border-border bg-card/50 p-1 shrink-0 grow-0">

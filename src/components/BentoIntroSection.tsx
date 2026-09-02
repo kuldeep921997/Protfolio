@@ -17,24 +17,24 @@ const BentoIntroSection = () => {
     .map((m) => ({ value: m!.value, label: m!.label }));
 
   return (
-    <section id="about" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6">
-      <div className="max-w-6xl mx-auto">
+    <section id="about" className="section-tight">
+      <div className="shell">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mb-12"
+          viewport={{ once: true, margin: "-80px" }}
+          className="mb-7 sm:mb-8"
         >
-          <p className="text-sm font-medium text-primary uppercase tracking-widest mb-2">About</p>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold">At a glance</h2>
+          <p className="eyebrow">About</p>
+          <h2 className="section-title">At a glance</h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-3 sm:gap-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="md:col-span-7 rounded-2xl bg-card border border-border card-hover p-5 sm:p-6 md:p-8"
+            className="md:col-span-7 card-base card-hover p-5 sm:p-6"
           >
             <div className="flex items-center gap-3 mb-4">
               <div className="p-2 rounded-xl bg-primary/10">
@@ -57,7 +57,7 @@ const BentoIntroSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="md:col-span-5 rounded-2xl bg-card border border-border card-hover p-5 sm:p-6 md:p-8"
+            className="md:col-span-5 card-base card-hover p-5 sm:p-6"
           >
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 rounded-xl bg-accent/10">
@@ -65,11 +65,15 @@ const BentoIntroSection = () => {
               </div>
               <h3 className="font-display text-lg font-bold">Key Metrics</h3>
             </div>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-x-4 gap-y-5">
               {keyMetrics.map((stat) => (
                 <div key={stat.label}>
-                  <div className="font-display text-2xl font-black text-foreground">{stat.value}</div>
-                  <div className="text-xs text-muted-foreground mt-1">{stat.label}</div>
+                  <div className="num font-display text-[1.75rem] font-extrabold text-foreground leading-none">
+                    {stat.value}
+                  </div>
+                  <div className="text-[11px] uppercase tracking-[0.08em] text-muted-foreground mt-1.5">
+                    {stat.label}
+                  </div>
                 </div>
               ))}
             </div>
@@ -80,7 +84,7 @@ const BentoIntroSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="md:col-span-4 rounded-2xl bg-card border border-border card-hover p-5 sm:p-6 md:p-8"
+            className="md:col-span-4 card-base card-hover p-5 sm:p-6"
           >
             <div className="flex items-center gap-3 mb-4">
               <div className="p-2 rounded-xl bg-primary/10">
@@ -108,7 +112,7 @@ const BentoIntroSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.3 }}
-            className="md:col-span-4 rounded-2xl bg-card border border-border card-hover p-5 sm:p-6 md:p-8"
+            className="md:col-span-4 card-base card-hover p-5 sm:p-6"
           >
             <div className="flex items-center gap-3 mb-4">
               <div className="p-2 rounded-xl bg-primary/10">
@@ -145,7 +149,7 @@ const BentoIntroSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.4 }}
-            className="md:col-span-4 rounded-2xl border border-primary/30 bg-primary/5 card-hover p-5 sm:p-6 md:p-8 relative overflow-hidden"
+            className="md:col-span-4 rounded-2xl border border-primary/30 bg-primary/[0.06] card-hover p-5 sm:p-6 relative overflow-hidden"
           >
             <div className="absolute -bottom-8 -right-8 w-32 h-32 rounded-full bg-primary/10 blur-[40px]" />
             <div className="relative z-10">

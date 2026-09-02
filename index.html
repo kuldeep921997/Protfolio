@@ -101,6 +101,18 @@
     </script>
   </head>
   <body>
+    <!-- Theme applied before first paint. Doing this in a React effect meant
+         the page rendered light for a frame and then flipped to dark. -->
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem('theme');
+          document.documentElement.classList.toggle('dark', t ? t === 'dark' : true);
+        } catch (e) {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
     <div id="root"></div>
     <noscript>
       <p style="font-family: sans-serif; padding: 2rem; text-align: center">

@@ -6,16 +6,16 @@ const ExperienceSection = () => {
   const experiences = useAppSelector((state) => state.experience.experiences);
 
   return (
-    <section id="experience" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6">
-      <div className="max-w-6xl mx-auto">
+    <section id="experience" className="section">
+      <div className="shell">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mb-12"
+          viewport={{ once: true, margin: "-80px" }}
+          className="mb-8 sm:mb-10"
         >
-          <p className="text-sm font-medium text-primary uppercase tracking-widest mb-2">Career</p>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold">Experience</h2>
+          <p className="eyebrow">Career</p>
+          <h2 className="section-title">Experience</h2>
         </motion.div>
 
         <div className="relative">
@@ -45,6 +45,11 @@ const ExperienceSection = () => {
                           {exp.company}
                           {exp.location ? ` · ${exp.location}` : ""}
                         </p>
+                        {exp.priorRole && (
+                          <p className="text-[12.5px] text-muted-foreground/80 mt-1.5 italic">
+                            {exp.priorRole}
+                          </p>
+                        )}
                       </div>
                     </div>
                     <span className="text-sm text-muted-foreground mt-2 sm:mt-0 font-mono">
