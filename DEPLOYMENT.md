@@ -47,10 +47,10 @@ git push origin main
 
 Once deployment is complete, your site will be available at:
 ```
-https://your-username.github.io/Protfolio/
+https://your-username.github.io
 ```
 
-(Replace `your-username` with your GitHub username and `Protfolio` with your repository name if different)
+(Replace `your-username` with your GitHub username)
 
 ## Manual Deployment (Alternative)
 

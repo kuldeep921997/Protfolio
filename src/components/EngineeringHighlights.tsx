@@ -1,48 +1,50 @@
 import { motion } from "framer-motion";
-import { Gauge, Puzzle, Network, LayoutDashboard, Zap, Shield } from "lucide-react";
+import { Gauge, Puzzle, Network, LayoutDashboard, Radio, Database } from "lucide-react";
 
+// Every figure here is mirrored from the resume so the two never disagree.
+// If you change a number in one place, change it in the other.
 const highlights = [
   {
     icon: Gauge,
-    title: "Performance Optimization",
+    title: "Rendering Performance",
     description:
-      "Achieved ~45% average load time reduction across enterprise applications through code splitting, lazy loading, and bundle optimization strategies.",
-    metric: "45% Faster",
+      "Re-engineered the heaviest inventory dashboards with list virtualization, memoized selectors and route-level code-splitting, cutting time-to-interactive from 8s to 3s on views of 50,000+ rows.",
+    metric: "8s → 3s",
+  },
+  {
+    icon: Radio,
+    title: "Real-Time Data Layer",
+    description:
+      "Built the platform's real-time layer, consuming Kafka-published Stock-on-Hand and RFID tracking events across 15 topics so store teams see stock movement in under 5 seconds instead of waiting on a 15-minute batch refresh.",
+    metric: "15-min batch → under 5s",
   },
   {
     icon: Network,
-    title: "Scalable API Integrations",
+    title: "High-Throughput Integrations",
     description:
-      "Designed high-throughput systems processing 1.28M+ daily transactions with a 99.68% API success rate across integrations with 25–30 backend services.",
+      "Designed integrations processing 1.28M+ daily transactions at a 99.68% API success rate, spanning 25–30 backend services across the inventory and analytics stack.",
     metric: "1.28M+ Daily Txns",
   },
   {
     icon: LayoutDashboard,
     title: "Enterprise Dashboard Platforms",
     description:
-      "Architected real-time analytics dashboards used by 6000+ users across 1000+ retail locations with live inventory tracking and operational reporting.",
-    metric: "6000+ Users",
+      "Architected the Store, Cluster and Self-Checkout portals that 12,000+ daily users rely on to manage INR 1,000 Cr of live inventory across 1,900+ stores and 6 retail brands.",
+    metric: "12,000+ Users",
   },
   {
     icon: Puzzle,
-    title: "Reusable Component Architecture",
+    title: "Design System Architecture",
     description:
-      "Built 30–40 reusable TypeScript components, reducing code duplication by 20–40% across multiple repositories and establishing scalable frontend architecture patterns.",
-    metric: "30–40 Components",
+      "Established a shared library of 50+ TypeScript components and a standardized Redux data layer, removing 30% of duplicated UI code and cutting new-module scaffolding from 5 days to 2.",
+    metric: "50+ Components",
   },
   {
-    icon: Zap,
-    title: "High-Performance Data Handling",
+    icon: Database,
+    title: "Query and Contract Design",
     description:
-      "Implemented optimized data rendering and state management strategies for large datasets used in analytics dashboards, significantly improving UI responsiveness and data handling performance.",
-    metric: "70% Faster",
-  },
-  {
-    icon: Shield,
-    title: "Role-Based Access Control Systems",
-    description:
-      "Designed scalable role-based access control models for multi-location enterprise systems, ensuring secure access management across thousands of users and operational roles.",
-    metric: "Enterprise-Grade Security",
+      "Authored the REST contracts and PostgreSQL stored procedures behind high-volume Stock-on-Hand aggregation, cutting the slowest store-level report from 10s to 2s.",
+    metric: "10s → 2s",
   },
 ];
 

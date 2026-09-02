@@ -5,9 +5,9 @@ import { useAppSelector } from "@/app/hooks";
 const BentoIntroSection = () => {
   const metrics = useAppSelector((state) => state.profile.metrics);
   const aboutParagraphs = [
-    "Senior Full Stack Engineer with 7+ years of experience building enterprise web applications used by 6000+ users across 1000+ locations.",
-    "I design scalable application architectures and high-performance interfaces for complex, data-driven platforms.",
-    "My focus is building reliable systems, improving performance, and helping teams deliver clean, maintainable, production-grade software.",
+    "Frontend-focused engineer with 7 years building data-intensive enterprise platforms across retail, logistics and fintech.",
+    "Currently SDE-2 at Reliance Jio, owning the frontend architecture of an inventory platform that serves 12,000+ daily users across 1,900+ stores and 6 retail brands.",
+    "I lead a 4-engineer frontend team and work across the API boundary — REST contract design, plus PostgreSQL query and stored-procedure tuning.",
   ];
 
   const keyMetricIds = ["experience", "users", "scale", "performance"];
@@ -90,10 +90,10 @@ const BentoIntroSection = () => {
             </div>
             <ul className="space-y-3">
               {[
-                "Optimization and Scalable frontend architecture",
-                "Enterprise inventory & retail platforms",
-                "Video Analytics and AI platforms",
-                "Component systems & state management",
+                "Real-time inventory platforms over Kafka & SSE",
+                "Rendering performance on 50,000+ row views",
+                "Retail video analytics on NVIDIA pipelines",
+                "Design systems & shared component libraries",
               ].map((item) => (
                 <li key={item} className="flex items-center gap-2 text-sm text-muted-foreground">
                   <span className="w-1.5 h-1.5 rounded-full bg-accent shrink-0" />
@@ -126,7 +126,7 @@ const BentoIntroSection = () => {
                 <div className="text-foreground font-semibold text-right">
                   <span>React · TypeScript · Node</span>
                   <br />
-                  <span>Kafka, AWS</span>
+                  <span>Kafka · SSE · PostgreSQL</span>
                 </div>
               </div>
             </div>
@@ -156,7 +156,8 @@ const BentoIntroSection = () => {
                 <h3 className="font-display text-lg font-bold">Let&apos;s Connect</h3>
               </div>
               <p className="text-sm text-muted-foreground mb-4">
-                Available for Full-Stack development, Frontend Architecture, and Enterprise Application projects.
+                Open to Senior Frontend Engineer roles. Mumbai-based, open to relocating to Bengaluru
+                or Hyderabad.
               </p>
               <a
                 href="#contact"

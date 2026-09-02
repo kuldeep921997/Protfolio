@@ -38,7 +38,7 @@ export interface Project {
   outcomes: ProjectOutcome[];
   scale: ScaleMetrics;
   images?: string[];
-  /** Shown in Featured Projects right panel (e.g. "1000+", "LOCATIONS") */
+  /** Shown in Featured Projects right panel (e.g. "1,900+", "LOCATIONS") */
   featuredStats?: FeaturedStat[];
   /** Shown below visual placeholder (e.g. "RFID · INVENTORY · MULTI-VENDOR") */
   featuredKeywords?: string;

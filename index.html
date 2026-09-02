@@ -2,19 +2,112 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Senior Frontend / Full Stack Engineer Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Schibsted Grotesk for body text -->
-    <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- GT Ultra alternative - using Playfair Display as fallback for titles -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- ==================== IDENTITY ==================== -->
+    <title>Kuldeep Lodhi — Senior Frontend Engineer | React, TypeScript, Real-Time Systems</title>
+    <meta
+      name="description"
+      content="Senior Frontend Engineer with 7 years building data-intensive enterprise platforms. Currently SDE-2 at Reliance Jio, owning the frontend architecture of an inventory platform serving 12,000+ daily users across 1,900+ stores."
+    />
+    <meta name="author" content="Kuldeep Lodhi" />
+    <link rel="canonical" href="https://kuldeep921997.github.io/" />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="theme-color" content="#0A0D16" />
+
+    <!-- ==================== SOCIAL PREVIEW ====================
+         Without these, pasting the link into LinkedIn or WhatsApp shows a
+         blank grey card. og:image needs a real 1200x630 PNG at
+         public/og-image.png -- until that file exists, platforms simply fall
+         back to a text-only preview, which is still far better than nothing.
+    -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kuldeep921997.github.io/" />
+    <meta property="og:site_name" content="Kuldeep Lodhi" />
+    <meta property="og:title" content="Kuldeep Lodhi — Senior Frontend Engineer" />
+    <meta
+      property="og:description"
+      content="React, TypeScript and real-time systems. Frontend architecture for an enterprise inventory platform serving 12,000+ daily users across 1,900+ stores."
+    />
+    <meta property="og:image" content="https://kuldeep921997.github.io/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Kuldeep Lodhi — Senior Frontend Engineer" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Kuldeep Lodhi — Senior Frontend Engineer" />
+    <meta
+      name="twitter:description"
+      content="React, TypeScript and real-time systems. Frontend architecture for an enterprise inventory platform serving 12,000+ daily users across 1,900+ stores."
+    />
+    <meta name="twitter:image" content="https://kuldeep921997.github.io/og-image.png" />
+
+    <!-- ==================== FONTS ====================
+         Inter is the only family the CSS actually uses (src/index.css sets it
+         on both `body` and `.font-display`). Previously this file requested
+         Schibsted Grotesk, Playfair Display AND Cormorant Garamond -- three
+         families, all downloaded, none referenced -- while Inter came in via a
+         render-blocking @import inside index.css. That is four font payloads
+         to render one typeface. Now: one family, one request, discovered in
+         the initial HTML so it fetches in parallel.
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ==================== STRUCTURED DATA ====================
+         Lets Google show a richer result for your name, and is how a
+         knowledge-panel-style entity gets associated with your profiles.
+    -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Kuldeep Lodhi",
+        "url": "https://kuldeep921997.github.io/",
+        "jobTitle": "Senior Frontend Engineer",
+        "email": "mailto:kuldeep921997@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Mumbai",
+          "addressCountry": "IN"
+        },
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Reliance Jio Platforms"
+        },
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Vidyalankar Institute of Technology, Mumbai"
+        },
+        "knowsAbout": [
+          "React",
+          "TypeScript",
+          "Frontend Architecture",
+          "Apache Kafka",
+          "Server-Sent Events",
+          "Web Performance",
+          "Design Systems"
+        ],
+        "sameAs": [
+          "https://github.com/kuldeep921997",
+          "https://www.linkedin.com/in/kuldeep-lodhi-1b17b9118/"
+        ]
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
+    <noscript>
+      <p style="font-family: sans-serif; padding: 2rem; text-align: center">
+        This portfolio needs JavaScript enabled. You can reach Kuldeep Lodhi at
+        <a href="mailto:kuldeep921997@gmail.com">kuldeep921997@gmail.com</a>.
+      </p>
+    </noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
-

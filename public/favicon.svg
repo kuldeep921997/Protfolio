@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Kuldeep Lodhi">
+  <rect width="64" height="64" rx="14" fill="#0A0D16"/>
+  <rect x="1.25" y="1.25" width="61.5" height="61.5" rx="12.75" fill="none" stroke="#2A3355" stroke-width="2.5"/>
+  <path d="M20 15 L20 49" stroke="#E7EAF3" stroke-width="6.5" stroke-linecap="round"/>
+  <path d="M45 15 L26 32 L45 49" stroke="#7C5CFC" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>

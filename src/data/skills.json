@@ -216,7 +216,7 @@
       "id": "state-management",
       "category": "Frontend Architecture",
       "title": "State Management Patterns",
-      "description": "Expert in Redux Toolkit with proven patterns for scalable state management. Built 30-40 reusable components reducing code duplication by 20-40% across dual repositories. Established frontend conventions for component architecture and scalable Redux patterns.",
+      "description": "Deep experience with Redux Toolkit and proven patterns for scalable state management. Built a shared library of 50+ reusable TypeScript components and a standardized Redux data layer, removing 30% of duplicated UI code and cutting new-module scaffolding from 5 days to 2. Established the frontend conventions the team works to.",
       "examples": [
         "Redux Toolkit for complex state management",
         "Component-level state for UI-only concerns",
@@ -228,7 +228,7 @@
       "id": "performance",
       "category": "Performance Optimization",
       "title": "Performance Optimization Techniques",
-      "description": "Proven track record of performance improvements: 45% reduction in load times, 55% reduction in page load time, sub-100ms response times. Expert in memoization, virtualization, code-splitting, and bundle optimization.",
+      "description": "Cut dashboard time-to-interactive from 8s to 3s on views rendering 50,000+ rows, and the slowest store-level report from 10s to 2s. Day-to-day work in list virtualization, memoized selectors, route-level code-splitting and bundle optimization.",
       "examples": [
         "React.memo and useMemo for expensive computations",
         "Virtual scrolling for large lists",
@@ -240,7 +240,7 @@
       "id": "component-arch",
       "category": "Frontend Architecture",
       "title": "Component Architecture Strategy",
-      "description": "Designed scalable component libraries with TypeScript, establishing patterns for reusability, maintainability, and consistency. Built component systems supporting 1000+ locations with role-based access control.",
+      "description": "Designed scalable component libraries with TypeScript, establishing patterns for reusability, maintainability and consistency. Built component systems supporting 1,900+ locations with role-based access control.",
       "examples": [
         "Atomic design principles",
         "Compound component patterns",
@@ -264,7 +264,7 @@
       "id": "error-handling",
       "category": "System Resilience",
       "title": "Error Handling & Resilience",
-      "description": "Implemented comprehensive error handling strategies ensuring 99.5%+ platform uptime. Graceful degradation patterns for distributed systems with 25-30 microservices integration.",
+      "description": "Implemented comprehensive error-handling strategies across the inventory and analytics stack, holding a 99.68% API success rate. Graceful degradation patterns for distributed systems spanning 25-30 backend services.",
       "examples": [
         "Error boundary implementation",
         "Graceful degradation strategies",
@@ -276,7 +276,7 @@
       "id": "devops",
       "category": "DevOps & Deployment",
       "title": "DevOps & CI/CD Excellence",
-      "description": "Configured Docker containerization, CI/CD pipelines, and deployment workflows enabling 2+ production releases daily. Streamlined deployment processes reducing time-to-production significantly.",
+      "description": "Configured Docker containerization, CI/CD pipelines and deployment workflows on Azure DevOps, taking the team from manual releases to 5-8 automated production deployments per week.",
       "examples": [
         "Docker containerization",
         "Azure DevOps CI/CD pipelines",

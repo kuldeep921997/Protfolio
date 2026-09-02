@@ -3,7 +3,7 @@ import { ArrowDown, Github, Linkedin, Mail, Download } from "lucide-react";
 
 const HeroSection = () => {
   const bio =
-    "Senior Full Stack Engineer with 7+ years of experience building enterprise web applications used by 6000+ users across 1000+ locations. I design scalable application architectures and high-performance interfaces for complex, data-driven platforms. My focus is building reliable systems, improving performance, and helping teams deliver clean, maintainable, production-grade software.";
+    "Frontend-focused engineer with 7 years building data-intensive enterprise platforms across retail, logistics and fintech. Currently SDE-2 at Reliance Jio, owning the frontend architecture of an inventory platform that serves 12,000+ daily users across 1,900+ stores and 6 retail brands. Strongest in React and TypeScript at scale, real-time interfaces over Kafka and SSE, rendering performance, and design-system work.";
 
   return (
     <section id="home" className="min-h-screen flex items-start relative overflow-hidden bg-background pt-20 sm:pt-24 md:pt-4 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
@@ -26,9 +26,9 @@ const HeroSection = () => {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-black tracking-tight leading-[0.9] mb-4 sm:mb-6 text-left pt-4 sm:pt-7"
         >
-          <span className="text-foreground">FULL-STACK</span>
+          <span className="text-foreground">SENIOR FRONTEND</span>
           <br />
-          <span className="text-gradient-hero">MERN ENGINEER</span>
+          <span className="text-gradient-hero">ENGINEER</span>
         </motion.h1>
 
         <motion.p
@@ -47,10 +47,10 @@ const HeroSection = () => {
           className="flex flex-wrap items-center gap-x-6 gap-y-2 mb-10 text-sm text-muted-foreground text-left"
         >
           {[
-            "7+ years development experience",
-            "MERN stack specialization",
-            "Enterprise-scale applications",
-            "Production dashboards & apps",
+            "7 years building for production",
+            "React · TypeScript · Redux",
+            "Real-time systems (Kafka, SSE)",
+            "Rendering performance at scale",
           ].map((item) => (
             <span key={item} className="flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-accent" />

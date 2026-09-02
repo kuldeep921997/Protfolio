@@ -23,12 +23,12 @@ const ContactSection = () => {
               something great.
             </h2>
             <p className="text-muted-foreground max-w-lg mx-auto mb-4">
-              Available for Full-Stack development, Frontend Architecture, and Enterprise Application
-              projects.
+              Open to Senior Frontend Engineer roles — frontend architecture, real-time systems and
+              performance work on data-intensive platforms.
             </p>
 
             <div className="flex flex-wrap items-center justify-center gap-2 mb-8">
-              {["Full-stack development", "Frontend architecture", "Enterprise applications"].map(
+              {["Frontend architecture", "Real-time systems", "Performance engineering"].map(
                 (tag) => (
                   <span
                     key={tag}

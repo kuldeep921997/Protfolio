@@ -4,7 +4,7 @@
       "id": "anytrac-rfid",
       "title": "AnyTrac RFID Platform",
       "description": "Unified RFID tag management system for Reliance Retail's Fashion & Lifestyle ecosystem, transforming inventory operations across the entire supply chain",
-      "problem": "Manual inventory counting was time-consuming (5 minutes for 50-item carton) and error-prone, leading to inventory inaccuracies (75% accuracy) and high theft rates. Needed a scalable solution for 1000+ locations with real-time tracking capabilities.",
+      "problem": "Manual inventory counting was time-consuming (5 minutes for 50-item carton) and error-prone, leading to inventory inaccuracies (75% accuracy) and high theft rates. Needed a scalable solution for 1,900+ locations with real-time tracking capabilities.",
       "architecture": "Built scalable frontend architecture for multi-vendor RFID integration supporting Store Portal, Cluster Portal, DC Shell Application, Self-Checkout systems, and Trial Room Analysis. Implemented advanced routing with React Router featuring lazy loading and code-splitting strategies. Designed modular workflow system with role-based access control.",
       "techStack": ["React.js", "TypeScript", "Redux Toolkit", "Node.js", "MySQL", "MongoDB", "Redis", "Azure DevOps"],
       "outcomes": [
@@ -40,13 +40,13 @@
         }
       ],
       "scale": {
-        "users": "6000+ daily active users",
+        "users": "12,000+ daily active users",
         "transactions": "1.28M+ daily transactions",
-        "stores": "1000+ locations nationwide",
+        "stores": "1,900+ locations nationwide",
         "data": "99.68% API success rate"
       },
       "featuredStats": [
-        { "value": "1000+", "label": "LOCATIONS" },
+        { "value": "1,900+", "label": "LOCATIONS" },
         { "value": "99%", "label": "ACCURACY" },
         { "value": "5x", "label": "FASTER COUNT" }
       ],
@@ -94,7 +94,7 @@
       "title": "Reliance Foundation Scholarship Portal",
       "description": "Comprehensive student enrollment and interview management system handling over 50,000 scholarship applications annually with streamlined workflows, automated processing, and role-based access control",
       "problem": "Legacy K2 Technology system lacked scalability, had high maintenance costs, and slow deployment cycles. Manual document processing was time-consuming with high error rates. Needed to support 50,000+ annual applications with multiple user personas and concurrent interview sessions.",
-      "architecture": "Migrated from legacy K2 Technology to modern MERN stack architecture. Built complete registration workflow with OCR integration for automated document processing. Created Interview Portal from scratch supporting over 50 concurrent interview sessions with real-time scoring, panel coordination, and automated candidate communication.",
+      "architecture": "Migrated a licensed K2 workflow system to a React, Node.js and MongoDB stack, removing per-seat licensing cost and unblocking in-house feature development. Built the registration workflow on an AI-backed document-parsing pipeline — OCR with automated field extraction and validation. Created the Interview Portal from scratch, supporting 50+ concurrent sessions with real-time scoring, panel coordination and automated candidate communication.",
       "techStack": ["React.js", "Node.js", "Express.js", "MongoDB", "OCR", "Azure DevOps"],
       "outcomes": [
         {
@@ -108,9 +108,9 @@
           "description": "Eliminated across all application touchpoints"
         },
         {
-          "metric": "System Scalability",
-          "value": "200% improvement",
-          "description": "Improved through MERN stack migration"
+          "metric": "Licensing Cost",
+          "value": "Eliminated",
+          "description": "Per-seat K2 licensing removed by moving to an in-house stack"
         },
         {
           "metric": "Maintenance Costs",
@@ -139,7 +139,7 @@
         { "value": "50+", "label": "CONCURRENT SESSIONS" },
         { "value": "Auto", "label": "DOC PROCESSING" }
       ],
-      "featuredKeywords": "MERN · OCR · INTERVIEW PORTAL"
+      "featuredKeywords": "REACT · OCR · INTERVIEW PORTAL"
     },
     {
       "id": "reliance-jewels",
@@ -182,46 +182,41 @@
       "id": "trading-simulator",
       "title": "Trading Simulator Platform",
       "description": "Complete trading simulation platform built from scratch, enabling users to practice trading strategies with real-time market data and ML-based portfolio recommendations",
-      "problem": "No existing platform for traders to practice and learn without financial risk. Needed a scalable solution with real-time market data, sub-100ms response times, and intelligent portfolio recommendations to drive user engagement.",
-      "architecture": "Architected and developed complete frontend from scratch using Svelte.js. Implemented ML-based portfolio recommendation system. Designed for high performance with sub-100ms response times. Built scalable architecture supporting 300-500 daily active users with 40-60% retention rate.",
-      "techStack": ["Svelte.js", "ML", "Full Stack", "Real-time Data"],
+      "problem": "The firm had no product of its own. Traders had nowhere to practice strategies without financial risk, and building one meant order execution, position keeping and intraday P&L had to be modelled correctly from day one.",
+      "architecture": "Built front to back as the founding engineer. Svelte frontend, Node.js order-execution and portfolio APIs, and market-data ingestion. Designed the data model behind order execution, position keeping and intraday P&L directly with the founders, so it held up as instrument coverage and trade volume grew. Added an ML-driven portfolio recommendation module in Python.",
+      "techStack": ["Svelte.js", "Node.js", "Python", "Machine Learning", "Real-time Data"],
       "outcomes": [
         {
           "metric": "User Engagement",
           "value": "25% increase",
-          "description": "Driven by ML-based portfolio recommendation system"
+          "description": "Driven by the ML-based portfolio recommendation module"
         },
         {
-          "metric": "Response Time",
-          "value": "<100ms",
-          "description": "Sub-100ms response times for trade processing"
+          "metric": "Product Maturity",
+          "value": "Prototype → core product",
+          "description": "Became the company's core commercial offering"
         },
         {
-          "metric": "Platform Uptime",
-          "value": "99.5%",
-          "description": "Maintained throughout rapid growth phase"
+          "metric": "Engineering Team",
+          "value": "1 → 3 engineers",
+          "description": "Grew the team, introducing code review, standards and onboarding docs"
         },
         {
-          "metric": "Daily Trades",
-          "value": "8K+",
-          "description": "Processing 8K+ simulated trades daily"
-        },
-        {
-          "metric": "User Retention",
-          "value": "40-60%",
-          "description": "Retention rate across user base"
+          "metric": "Ownership",
+          "value": "Founding engineer",
+          "description": "Sole engineer at inception, owning frontend and the APIs behind it"
         }
       ],
       "scale": {
-        "users": "300-500 daily active users",
-        "transactions": "8K+ simulated trades daily",
-        "stores": "ML-based recommendations",
-        "data": "Real-time market data processing"
+        "users": "The firm's core commercial product",
+        "transactions": "Order execution, position keeping, intraday P&L",
+        "stores": "ML-based portfolio recommendations",
+        "data": "Real-time market data ingestion"
       },
       "featuredStats": [
-        { "value": "8K+", "label": "DAILY TRADES" },
-        { "value": "<100ms", "label": "RESPONSE TIME" },
-        { "value": "40-60%", "label": "RETENTION" }
+        { "value": "25%", "label": "ENGAGEMENT LIFT" },
+        { "value": "1 → 3", "label": "TEAM GROWTH" },
+        { "value": "Founding", "label": "ENGINEER" }
       ],
       "featuredKeywords": "SVELTE · ML · REAL-TIME"
     }

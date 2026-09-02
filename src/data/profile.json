@@ -4,37 +4,37 @@
       "id": "experience",
       "label": "Years of Experience",
       "value": "7+",
-      "description": "Building enterprise-scale applications"
+      "description": "Building data-intensive enterprise platforms"
     },
     {
       "id": "users",
-      "label": "Users Impacted",
-      "value": "6000+",
-      "description": "Daily active users across platforms"
-    },
-    {
-      "id": "systems",
-      "label": "Systems Built",
-      "value": "50+",
-      "description": "Production applications in active use"
-    },
-    {
-      "id": "performance",
-      "label": "Performance Improvements",
-      "value": "45%",
-      "description": "Average reduction in load times"
+      "label": "Daily Users",
+      "value": "12,000+",
+      "description": "Store, cluster and self-checkout portals in daily use"
     },
     {
       "id": "scale",
-      "label": "Locations Served",
-      "value": "1300+",
-      "description": "Retail stores and distribution centers"
+      "label": "Retail Stores Served",
+      "value": "1,900+",
+      "description": "Across 6 retail brands on one inventory platform"
+    },
+    {
+      "id": "performance",
+      "label": "Dashboard Load Time",
+      "value": "8s → 3s",
+      "description": "On views rendering 50,000+ rows, after virtualization and code-splitting"
     },
     {
       "id": "transactions",
       "label": "Daily Transactions",
       "value": "1.28M+",
-      "description": "Processed across enterprise platforms"
+      "description": "Processed across enterprise platforms at 99.68% API success rate"
+    },
+    {
+      "id": "components",
+      "label": "Shared Components",
+      "value": "50+",
+      "description": "Design-system library that removed 30% of duplicated UI code"
     }
   ]
 }
